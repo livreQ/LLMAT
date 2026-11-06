@@ -1,0 +1,46 @@
+!!python/object:argparse.Namespace
+# Multi-objective LLMAT configuration
+# finetuning: false (fixed features only for now)
+n_init_data: 10
+exp_len: 100
+acqf: ei # 
+prompt_type: just-smiles
+run_subset_only: false
+feature_reduction: average
+clustering_type: kmeans
+iupac: false
+normalize_y: false
+n_clusters: 5
+# LLMAT specific parameters
+gamma: 0.33 # quantile for partitioning
+lmbda: 1.0 # UCB weight for llmat
+eta: 0.01 # meta learning rate for llmat
+tree_depth: 3 # tree depth for llmat
+threshold: 0.5 # threshold for partitioning
+p_val: 0 # p-value for statistical testing
+reinit: false # whether to reinitialize the model
+fix_args:
+  batch_size: 256 # BO batch size
+  head:
+    n_epochs: 50
+    lr: 1e-2
+    batch_size: 256
+    leaf_sample_size: 2
+finetuning_args:
+  batch_size: 16 # BO batch size
+  head:
+    n_epochs: 50
+    lr: 1e-2
+    batch_size: 256
+    leaf_sample_size: 2
+  lora: 
+    n_epochs: 10
+    batch_size: 16
+    r: 4
+    alpha: 16
+    dropout: 0.1
+    bias: none
+    save: head
+    lr: 3e-3
+    reg: 0 # regularization for LoRA
+    grad_clip: 0.0

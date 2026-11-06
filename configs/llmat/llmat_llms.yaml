@@ -1,0 +1,43 @@
+!!python/object:argparse.Namespace
+# finetuning: false
+n_init_data: 10
+exp_len: 100
+acqf: ei #ts, ei, ucb
+prompt_type: just-smiles
+run_subset_only: false
+feature_reduction: average
+clustering_type: llms
+iupac: false
+normalize_y: false
+gamma: 0.5 #0.5
+lmbda: 0.5 #100
+eta: 0.005 #0.01
+tree_depth: 3
+threshold: 0.5
+p_val: 0
+reinit: false
+fix_args:
+  batch_size: 256 # BO batch size
+  # method: gp #random # gp, laplace
+  head:
+    n_epochs: 50
+    lr: 1e-2
+    batch_size: 256
+finetuning_args:
+  batch_size: 8 # BO batch size
+  head:
+    n_epochs: 50
+    lr: 1e-2
+    batch_size: 8
+  lora: 
+    n_epochs: 10
+    batch_size: 8
+    r: 4
+    alpha: 16
+    dropout: 0.1
+    bias: none
+    save: head
+    lr: 3e-3
+    grad_clip: 0.0
+
+       

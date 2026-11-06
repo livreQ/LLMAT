@@ -1,0 +1,29 @@
+!!python/object:argparse.Namespace
+# finetuning: false
+n_init_data: 10
+exp_len: 100
+acqf: ts #ts, ei, ucb
+prompt_type: just-smiles
+run_subset_only: false
+feature_reduction: average
+iupac: false
+normalize_y: false
+clustering_type: kmeans
+fix_args:
+  method: random # gp, laplace
+  batch_size: 256
+finetuning_args:
+  batch_size: 8
+  lora:
+    r: 4
+    alpha: 16
+    dropout: 0.1
+    bias: none
+    save: head
+    lr: 3e-3
+  laplace:
+     type: all
+     n_epochs: 30
+     noise_var: 0.001
+     hess_fac: full
+       

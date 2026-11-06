@@ -1,0 +1,38 @@
+!!python/object:argparse.Namespace
+
+benchmarks:
+  mat:
+    feature_models:
+        #- fingerprints
+        #- molformer
+        #- t5-base
+        - t5-base-chem
+        #- gpt2-medium
+        #- gpt2-large
+        #- llama-2-7b
+        #- gin
+    datasets:
+        - redox-mer
+        #- solvation
+        #- kinase
+        #- laser
+        #- pce
+        #- photoswitch
+  multiobj_mat:  # Add multi-objective benchmark section
+    feature_models:
+        - t5-base-chem
+        # - molformer
+    datasets:
+        - redox-mer
+        # - laser
+  toy:
+    feature_models:
+        - random_embedding
+        # - x_original
+    datasets:
+        - levy
+        - ackley
+    # Toy benchmark specific parameters
+    toy_dims: 20
+    toy_n_samples: 1000
+

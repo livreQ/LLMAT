@@ -1,0 +1,43 @@
+!!python/object:argparse.Namespace
+# Decoupled MCTS-LFBO ablation config
+# Partition: binary K-means on observed samples (LA-MCTS style)
+# Acquisition: independent LFBO classifier per tree node (no shared theta / meta-gradient)
+n_init_data: 10
+exp_len: 100
+acqf: ei
+prompt_type: just-smiles
+run_subset_only: false
+feature_reduction: average
+clustering_type: kmeans
+iupac: false
+normalize_y: false
+gamma: 0.5
+lmbda: 0.5
+tree_depth: 3
+reinit: false
+threshold: 0.5
+fix_args:
+  batch_size: 256
+  head:
+    n_epochs: 50
+    lr: 1e-2
+    batch_size: 256
+    leaf_sample_size: 2
+finetuning_args:
+  batch_size: 16
+  head:
+    n_epochs: 50
+    lr: 1e-2
+    batch_size: 256
+    leaf_sample_size: 2
+  lora:
+    n_epochs: 50
+    batch_size: 16
+    reg: 0
+    r: 4
+    alpha: 16
+    dropout: 0.1
+    bias: none
+    save: head
+    lr: 3e-5
+    grad_clip: 0.0

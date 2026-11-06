@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+env/
+
+# Jupyter / editors / OS
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.DS_Store
+
+# Logs and experiment tracking
+*.log
+wandb/
+lightning_logs/
+outputs/
+
+# Experiment results (not tracked for now; distributed separately)
+results/
+
+# Large cached features / processed datasets (distribute separately, see README)
+benchmarks/MAT/data/features/
+benchmarks/MAT/data/dataset/
+
+# Secrets
+.env
+*.key

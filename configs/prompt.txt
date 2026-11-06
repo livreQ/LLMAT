@@ -1,0 +1,2061 @@
+test material_benchmarks
+get target redox-mer
+Ered
+Dataset name: kmeans_clusters/redox-mer-t5-base-chem-just-smiles-average-finetuning
+Ered
+      Entry Number                File Name  ... Absorption Wavelength  cluster
+0                0  BTZ-Neutral-wb97xd-1000  ...                381.65        2
+1                1  BTZ-Neutral-wb97xd-1001  ...                354.74        4
+2                2  BTZ-Neutral-wb97xd-1002  ...                334.28        3
+3                3  BTZ-Neutral-wb97xd-1003  ...                319.72        0
+4                4  BTZ-Neutral-wb97xd-1004  ...                336.77        3
+...            ...                      ...  ...                   ...      ...
+1402          1402   BTZ-Neutral-wb97xd-995  ...                328.27        0
+1403          1403   BTZ-Neutral-wb97xd-996  ...                385.59        3
+1404          1404   BTZ-Neutral-wb97xd-997  ...                344.75        0
+1405          1405   BTZ-Neutral-wb97xd-998  ...                362.34        3
+1406          1406   BTZ-Neutral-wb97xd-999  ...                410.50        3
+
+[1407 rows x 8 columns]
+[2 4 3 0 1]
+3       1.932468
+6       2.031730
+8       1.969800
+13      1.896116
+14      2.276158
+          ...   
+1394    2.250608
+1395    2.072790
+1399    2.566407
+1402    2.416752
+1404    2.546326
+Name: Ered, Length: 394, dtype: float64
+      Entry Number                File Name  ... Absorption Wavelength  cluster
+0                0  BTZ-Neutral-wb97xd-1000  ...                381.65        2
+1                1  BTZ-Neutral-wb97xd-1001  ...                354.74        4
+2                2  BTZ-Neutral-wb97xd-1002  ...                334.28        3
+3                3  BTZ-Neutral-wb97xd-1003  ...                319.72        0
+4                4  BTZ-Neutral-wb97xd-1004  ...                336.77        3
+...            ...                      ...  ...                   ...      ...
+1402          1402   BTZ-Neutral-wb97xd-995  ...                328.27        0
+1403          1403   BTZ-Neutral-wb97xd-996  ...                385.59        3
+1404          1404   BTZ-Neutral-wb97xd-997  ...                344.75        0
+1405          1405   BTZ-Neutral-wb97xd-998  ...                362.34        3
+1406          1406   BTZ-Neutral-wb97xd-999  ...                410.50        3
+
+[1407 rows x 8 columns]
+SMILES
+You are a chemist, please use the molecules provided, group them into five clusters based on their redox potential (extremely low : 0, low: 1, medium: 2, high: 3, extremely high :4). Analyze the following features for each molecule: Number and type of electron-withdrawing groups (e.g., CF₃, NO₂, CN, halogens). Number and type of electron-donating groups (e.g., alkyl, methoxy, hydroxyl). Positioning of substituents on aromatic rings (meta, para, ortho). Presence of sulfur-containing functional groups (e.g., SCF₃, S=O). Degree of molecular polarity (based on F, O, or N atoms). Use these criteria to evaluate the redox potential qualitatively and cluster the molecules accordingly.**Respond strictly with the numerical cluster labels only. Do not include any additional text.**
+Now please cluster the following molecules:
+1. CCOCN(C(C)=O)c1c(OC)c(C#N)c([N+](=O)[O-])c2nsnc12
+2. CCOCN(C(C)=O)c1c(OC)c(C#N)c(S(=O)(=O)N(C)C)c2nsnc12
+3. CCOCN(C(C)=O)c1c(OC)c(OC)c(C)c2nsnc12
+4. CCOCN(C(C)=O)c1c(OC)c(OC)c(C(F)(F)F)c2nsnc12
+5. CCOCN(C(C)=O)c1c(OC)c(OC)c(C#N)c2nsnc12
+6. CCOCN(C(C)=O)c1c(OC)c(OC)c(OC)c2nsnc12
+7. CCOCN(C(C)=O)c1c(OC)c(OC)c(OC(F)(F)F)c2nsnc12
+8. CCOCN(C(C)=O)c1c(OC)c(OC)c(SC)c2nsnc12
+9. CCOCN(C(C)=O)c1c(OC)c(OC)c(SC(F)(F)F)c2nsnc12
+10. CCOCN(C(C)=O)c1c(OC)c(OC)c(Br)c2nsnc12
+11. CCOCN(C(C)=O)c1c(OC)c(OC)c(N(C)C)c2nsnc12
+12. CCOCN(C(C)=O)c1c(OC)c(OC)c([N+](=O)[O-])c2nsnc12
+13. CCOCN(C(C)=O)c1c(OC)c(OC)c(S(=O)(=O)N(C)C)c2nsnc12
+14. CCOCN(C(C)=O)c1c(OC)c(OC(F)(F)F)c(C)c2nsnc12
+15. CCOCN(C(C)=O)c1c(OC)c(OC(F)(F)F)c(C(F)(F)F)c2nsnc12
+16. CCOCN(C(C)=O)c1c(OC)c(OC(F)(F)F)c(C#N)c2nsnc12
+17. CCOCN(C(C)=O)c1c(OC)c(OC(F)(F)F)c(OC)c2nsnc12
+18. CCOCN(C(C)=O)c1c(OC)c(OC(F)(F)F)c(OC(F)(F)F)c2nsnc12
+19. CCOCN(C(C)=O)c1c(OC)c(OC(F)(F)F)c(SC)c2nsnc12
+20. CCOCN(C(C)=O)c1c(OC)c(OC(F)(F)F)c(SC(F)(F)F)c2nsnc12
+21. CCOCN(C(C)=O)c1c(OC)c(OC(F)(F)F)c(Br)c2nsnc12
+22. CCOCN(C(C)=O)c1c(OC)c(OC(F)(F)F)c(N(C)C)c2nsnc12
+23. CCOCN(C(C)=O)c1c(OC)c(OC(F)(F)F)c([N+](=O)[O-])c2nsnc12
+24. CCOCN(C(C)=O)c1c(OC)c(OC(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12
+25. CCOCN(C(C)=O)c1c(OC)c(SC)c(C)c2nsnc12
+26. CCOCN(C(C)=O)c1c(OC)c(SC)c(C(F)(F)F)c2nsnc12
+27. CCOCN(C(C)=O)c1c(OC)c(SC)c(C#N)c2nsnc12
+28. CCOCN(C(C)=O)c1c(OC)c(SC)c(OC)c2nsnc12
+29. CCOCN(C(C)=O)c1c(OC)c(SC)c(OC(F)(F)F)c2nsnc12
+30. CCOCN(C(C)=O)c1c(OC)c(SC)c(SC)c2nsnc12
+31. CCOCN(C(C)=O)c1c(OC)c(SC)c(SC(F)(F)F)c2nsnc12
+32. CCOCN(C(C)=O)c1c(OC)c(SC)c(Br)c2nsnc12
+33. CCOCN(C(C)=O)c1c(OC)c(SC)c(N(C)C)c2nsnc12
+34. CCOCN(C(C)=O)c1c(OC)c(SC)c([N+](=O)[O-])c2nsnc12
+35. CCOCN(C(C)=O)c1c(OC)c(SC)c(S(=O)(=O)N(C)C)c2nsnc12
+36. CCOCN(C(C)=O)c1c(OC)c(SC(F)(F)F)c(C)c2nsnc12
+37. CCOCN(C(C)=O)c1c(OC)c(SC(F)(F)F)c(C(F)(F)F)c2nsnc12
+38. CCOCN(C(C)=O)c1c(OC)c(SC(F)(F)F)c(C#N)c2nsnc12
+39. CCOCN(C(C)=O)c1c(OC)c(SC(F)(F)F)c(OC)c2nsnc12
+40. CCOCN(C(C)=O)c1c(OC)c(SC(F)(F)F)c(OC(F)(F)F)c2nsnc12
+41. CCOCN(C(C)=O)c1c(OC)c(SC(F)(F)F)c(SC)c2nsnc12
+42. CCOCN(C(C)=O)c1c(OC)c(SC(F)(F)F)c(SC(F)(F)F)c2nsnc12
+43. CCOCN(C(C)=O)c1c(OC)c(SC(F)(F)F)c(Br)c2nsnc12
+44. CCOCN(C(C)=O)c1c(OC)c(SC(F)(F)F)c(N(C)C)c2nsnc12
+45. CCOCN(C(C)=O)c1c(OC)c(SC(F)(F)F)c([N+](=O)[O-])c2nsnc12
+46. CCOCN(C(C)=O)c1c(OC)c(SC(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12
+47. CCOCN(C(C)=O)c1c(OC)c(N(C)C)c(C)c2nsnc12
+48. CCOCN(C(C)=O)c1c(OC)c(N(C)C)c(C(F)(F)F)c2nsnc12
+49. CCOCN(C(C)=O)c1c(OC)c(N(C)C)c(C#N)c2nsnc12
+50. CCOCN(C(C)=O)c1c(OC)c(N(C)C)c(OC)c2nsnc12
+51. CCOCN(C(C)=O)c1c(OC)c(N(C)C)c(OC(F)(F)F)c2nsnc12
+52. CCOCN(C(C)=O)c1c(OC)c(N(C)C)c(SC)c2nsnc12
+53. CCOCN(C(C)=O)c1c(OC)c(N(C)C)c(SC(F)(F)F)c2nsnc12
+54. CCOCN(C(C)=O)c1c(OC)c(N(C)C)c(Br)c2nsnc12
+55. CCOCN(C(C)=O)c1c(OC)c(N(C)C)c(N(C)C)c2nsnc12
+56. CCOCN(C(C)=O)c1c(OC)c(N(C)C)c([N+](=O)[O-])c2nsnc12
+57. CCOCN(C(C)=O)c1c(OC)c(N(C)C)c(S(=O)(=O)N(C)C)c2nsnc12
+58. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C)c(C)c2nsnc12
+59. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C)c(C(F)(F)F)c2nsnc12
+60. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C)c(C#N)c2nsnc12
+61. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C)c(OC)c2nsnc12
+62. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C)c(OC(F)(F)F)c2nsnc12
+63. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C)c(SC)c2nsnc12
+64. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C)c(SC(F)(F)F)c2nsnc12
+65. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C)c(Br)c2nsnc12
+66. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C)c(N(C)C)c2nsnc12
+67. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C)c([N+](=O)[O-])c2nsnc12
+68. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C)c(S(=O)(=O)N(C)C)c2nsnc12
+69. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C(F)(F)F)c(C)c2nsnc12
+70. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C(F)(F)F)c(C(F)(F)F)c2nsnc12
+71. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C(F)(F)F)c(C#N)c2nsnc12
+72. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C(F)(F)F)c(OC)c2nsnc12
+73. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C(F)(F)F)c(OC(F)(F)F)c2nsnc12
+74. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C(F)(F)F)c(SC)c2nsnc12
+75. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C(F)(F)F)c(SC(F)(F)F)c2nsnc12
+76. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C(F)(F)F)c(Br)c2nsnc12
+77. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C(F)(F)F)c(N(C)C)c2nsnc12
+78. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C(F)(F)F)c([N+](=O)[O-])c2nsnc12
+79. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12
+80. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C#N)c(C)c2nsnc12
+81. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C#N)c(C(F)(F)F)c2nsnc12
+82. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C#N)c(C#N)c2nsnc12
+83. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C#N)c(OC)c2nsnc12
+84. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C#N)c(OC(F)(F)F)c2nsnc12
+85. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C#N)c(SC)c2nsnc12
+86. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C#N)c(SC(F)(F)F)c2nsnc12
+87. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C#N)c(Br)c2nsnc12
+88. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C#N)c(N(C)C)c2nsnc12
+89. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C#N)c([N+](=O)[O-])c2nsnc12
+90. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C#N)c(S(=O)(=O)N(C)C)c2nsnc12
+91. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC)c(C)c2nsnc12
+92. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC)c(C(F)(F)F)c2nsnc12
+93. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC)c(C#N)c2nsnc12
+94. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC)c(OC)c2nsnc12
+95. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC)c(OC(F)(F)F)c2nsnc12
+96. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC)c(SC)c2nsnc12
+97. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC)c(SC(F)(F)F)c2nsnc12
+98. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC)c(Br)c2nsnc12
+99. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC)c(N(C)C)c2nsnc12
+100. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC)c([N+](=O)[O-])c2nsnc12
+101. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC)c(S(=O)(=O)N(C)C)c2nsnc12
+102. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC(F)(F)F)c(C)c2nsnc12
+103. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC(F)(F)F)c(C(F)(F)F)c2nsnc12
+104. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC(F)(F)F)c(C#N)c2nsnc12
+105. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC(F)(F)F)c(OC)c2nsnc12
+106. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC(F)(F)F)c(OC(F)(F)F)c2nsnc12
+107. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC(F)(F)F)c(SC)c2nsnc12
+108. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC(F)(F)F)c(SC(F)(F)F)c2nsnc12
+109. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC(F)(F)F)c(Br)c2nsnc12
+110. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC(F)(F)F)c(N(C)C)c2nsnc12
+111. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC(F)(F)F)c([N+](=O)[O-])c2nsnc12
+112. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12
+113. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC)c(C)c2nsnc12
+114. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC)c(C(F)(F)F)c2nsnc12
+115. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC)c(C#N)c2nsnc12
+116. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC)c(OC)c2nsnc12
+117. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC)c(OC(F)(F)F)c2nsnc12
+118. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC)c(SC)c2nsnc12
+119. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC)c(SC(F)(F)F)c2nsnc12
+120. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC)c(Br)c2nsnc12
+121. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC)c(N(C)C)c2nsnc12
+122. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC)c([N+](=O)[O-])c2nsnc12
+123. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC)c(S(=O)(=O)N(C)C)c2nsnc12
+124. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC(F)(F)F)c(C)c2nsnc12
+125. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC(F)(F)F)c(C(F)(F)F)c2nsnc12
+126. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC(F)(F)F)c(C#N)c2nsnc12
+127. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC(F)(F)F)c(OC)c2nsnc12
+128. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC(F)(F)F)c(OC(F)(F)F)c2nsnc12
+129. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC(F)(F)F)c(SC)c2nsnc12
+130. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC(F)(F)F)c(SC(F)(F)F)c2nsnc12
+131. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC(F)(F)F)c(Br)c2nsnc12
+132. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC(F)(F)F)c(N(C)C)c2nsnc12
+133. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC(F)(F)F)c([N+](=O)[O-])c2nsnc12
+134. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12
+135. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(N(C)C)c(C)c2nsnc12
+136. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(N(C)C)c(C(F)(F)F)c2nsnc12
+137. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(N(C)C)c(C#N)c2nsnc12
+138. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(N(C)C)c(OC)c2nsnc12
+139. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(N(C)C)c(OC(F)(F)F)c2nsnc12
+140. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(N(C)C)c(SC)c2nsnc12
+141. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(N(C)C)c(SC(F)(F)F)c2nsnc12
+142. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(N(C)C)c(Br)c2nsnc12
+143. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(N(C)C)c(N(C)C)c2nsnc12
+144. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(N(C)C)c([N+](=O)[O-])c2nsnc12
+145. CCOCN(C(C)=O)c1c(OC(F)(F)F)c(N(C)C)c(S(=O)(=O)N(C)C)c2nsnc12
+146. CCOCN(C(C)=O)c1c(SC)c(C)c(C)c2nsnc12
+147. CCOCN(C(C)=O)c1c(SC)c(C)c(C(F)(F)F)c2nsnc12
+148. CCOCN(C(C)=O)c1c(SC)c(C)c(C#N)c2nsnc12
+149. CCOCN(C(C)=O)c1c(SC)c(C)c(OC)c2nsnc12
+150. CCOCN(C(C)=O)c1c(SC)c(C)c(OC(F)(F)F)c2nsnc12
+151. CCOCN(C(C)=O)c1c(SC)c(C)c(SC)c2nsnc12
+152. CCOCN(C(C)=O)c1c(SC)c(C)c(SC(F)(F)F)c2nsnc12
+153. CCOCN(C(C)=O)c1c(SC)c(C)c(Br)c2nsnc12
+154. CCOCN(C(C)=O)c1c(SC)c(C)c(N(C)C)c2nsnc12
+155. CCOCN(C(C)=O)c1c(SC)c(C)c([N+](=O)[O-])c2nsnc12
+156. CCOCN(C(C)=O)c1c(SC)c(C)c(S(=O)(=O)N(C)C)c2nsnc12
+157. CCOCN(C(C)=O)c1c(SC)c(C(F)(F)F)c(C)c2nsnc12
+158. CCOCN(C(C)=O)c1c(SC)c(C(F)(F)F)c(C(F)(F)F)c2nsnc12
+159. CCOCN(C(C)=O)c1c(SC)c(C(F)(F)F)c(C#N)c2nsnc12
+160. CCOCN(C(C)=O)c1c(SC)c(C(F)(F)F)c(OC)c2nsnc12
+161. CCOCN(C(C)=O)c1c(SC)c(C(F)(F)F)c(OC(F)(F)F)c2nsnc12
+162. CCOCN(C(C)=O)c1c(SC)c(C(F)(F)F)c(SC)c2nsnc12
+163. CCOCN(C(C)=O)c1c(SC)c(C(F)(F)F)c(SC(F)(F)F)c2nsnc12
+164. CCOCN(C(C)=O)c1c(SC)c(C(F)(F)F)c(Br)c2nsnc12
+165. CCOCN(C(C)=O)c1c(SC)c(C(F)(F)F)c(N(C)C)c2nsnc12
+166. CCOCN(C(C)=O)c1c(SC)c(C(F)(F)F)c([N+](=O)[O-])c2nsnc12
+167. CCOCN(C(C)=O)c1c(SC)c(C(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12
+168. CCOCN(C(C)=O)c1c(SC)c(C#N)c(C)c2nsnc12
+169. CCOCN(C(C)=O)c1c(SC)c(C#N)c(C(F)(F)F)c2nsnc12
+170. CCOCN(C(C)=O)c1c(SC)c(C#N)c(C#N)c2nsnc12
+171. CCOCN(C(C)=O)c1c(SC)c(C#N)c(OC)c2nsnc12
+172. CCOCN(C(C)=O)c1c(SC)c(C#N)c(OC(F)(F)F)c2nsnc12
+173. CCOCN(C(C)=O)c1c(SC)c(C#N)c(SC)c2nsnc12
+174. CCOCN(C(C)=O)c1c(SC)c(C#N)c(SC(F)(F)F)c2nsnc12
+175. CCOCN(C(C)=O)c1c(SC)c(C#N)c(Br)c2nsnc12
+176. CCOCN(C(C)=O)c1c(SC)c(C#N)c(N(C)C)c2nsnc12
+177. CCOCN(C(C)=O)c1c(SC)c(C#N)c([N+](=O)[O-])c2nsnc12
+178. CCOCN(C(C)=O)c1c(SC)c(C#N)c(S(=O)(=O)N(C)C)c2nsnc12
+179. CCOCN(C(C)=O)c1c(SC)c(OC)c(C)c2nsnc12
+180. CCOCN(C(C)=O)c1c(SC)c(OC)c(C(F)(F)F)c2nsnc12
+181. CCOCN(C(C)=O)c1c(SC)c(OC)c(C#N)c2nsnc12
+182. CCOCN(C(C)=O)c1c(SC)c(OC)c(OC)c2nsnc12
+183. CCOCN(C(C)=O)c1c(SC)c(OC)c(OC(F)(F)F)c2nsnc12
+184. CCOCN(C(C)=O)c1c(SC)c(OC)c(SC)c2nsnc12
+185. CCOCN(C(C)=O)c1c(SC)c(OC)c(SC(F)(F)F)c2nsnc12
+186. CCOCN(C(C)=O)c1c(SC)c(OC)c(Br)c2nsnc12
+187. CCOCN(C(C)=O)c1c(SC)c(OC)c(N(C)C)c2nsnc12
+188. CCOCN(C(C)=O)c1c(SC)c(OC)c([N+](=O)[O-])c2nsnc12
+189. CCOCN(C(C)=O)c1c(SC)c(OC)c(S(=O)(=O)N(C)C)c2nsnc12
+190. CCOCN(C(C)=O)c1c(SC)c(OC(F)(F)F)c(C)c2nsnc12
+191. CCOCN(C(C)=O)c1c(SC)c(OC(F)(F)F)c(C(F)(F)F)c2nsnc12
+192. CCOCN(C(C)=O)c1c(SC)c(OC(F)(F)F)c(C#N)c2nsnc12
+193. CCOCN(C(C)=O)c1c(SC)c(OC(F)(F)F)c(OC)c2nsnc12
+194. CCOCN(C(C)=O)c1c(SC)c(OC(F)(F)F)c(OC(F)(F)F)c2nsnc12
+195. CCOCN(C(C)=O)c1c(SC)c(OC(F)(F)F)c(SC)c2nsnc12
+196. CCOCN(C(C)=O)c1c(SC)c(OC(F)(F)F)c(SC(F)(F)F)c2nsnc12
+197. CCOCN(C(C)=O)c1c(SC)c(OC(F)(F)F)c(Br)c2nsnc12
+198. CCOCN(C(C)=O)c1c(SC)c(OC(F)(F)F)c(N(C)C)c2nsnc12
+199. CCOCN(C(C)=O)c1c(SC)c(OC(F)(F)F)c([N+](=O)[O-])c2nsnc12
+200. CCOCN(C(C)=O)c1c(SC)c(OC(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12
+
+1. 4
+2. 4
+3. 0
+4. 1
+5. 2
+6. 0
+7. 1
+8. 1
+9. 2
+10. 1
+11. 0
+12. 4
+13. 4
+14. 1
+15. 2
+16. 3
+17. 1
+18. 2
+19. 1
+20. 3
+21. 1
+22. 1
+23. 4
+24. 4
+25. 0
+26. 1
+27. 2
+28. 0
+29. 1
+30. 1
+31. 2
+32. 1
+33. 0
+34. 2
+35. 3
+36. 1
+37. 2
+38. 3
+39. 1
+40. 2
+41. 1
+42. 2
+43. 1
+44. 1
+45. 3
+46. 3
+47. 0
+48. 1
+49. 2
+50. 0
+51. 1
+52. 0
+53. 1
+54. 1
+55. 0
+56. 3
+57. 3
+58. 1
+59. 2
+60. 3
+61. 1
+62. 2
+63. 1
+64. 2
+65. 1
+66. 1
+67. 3
+68. 3
+69. 2
+70. 3
+71. 3
+72. 2
+73. 3
+74. 2
+75. 3
+76. 2
+77. 2
+78. 4
+79. 4
+80. 3
+81. 4
+82. 4
+83. 3
+84. 4
+85. 3
+86. 4
+87. 3
+88. 3
+89. 4
+90. 4
+91. 2
+92. 3
+93. 3
+94. 2
+95. 3
+96. 2
+97. 3
+98. 2
+99. 2
+100. 4
+101. 4
+102. 2
+103. 3
+104. 4
+105. 3
+106. 4
+107. 3
+108. 4
+109. 3
+110. 3
+111. 4
+112. 4
+113. 1
+114. 2
+115. 3
+116. 1
+117. 2
+118. 2
+119. 3
+120. 2
+121. 2
+122. 4
+123. 4
+124. 2
+125. 3
+126. 4
+127. 3
+128. 4
+129. 3
+130. 4
+131. 3
+132. 3
+133. 4
+134. 4
+135. 2
+136. 3
+137. 4
+138. 3
+139. 4
+140. 3
+141. 4
+142. 3
+143. 3
+144. 4
+145. 4
+146. 0
+147. 1
+148. 2
+149. 0
+150. 1
+151. 1
+152. 2
+153. 1
+154. 0
+155. 2
+156. 3
+157. 1
+158. 2
+159. 3
+160. 1
+161. 2
+162. 1
+163. 2
+164. 1
+165. 1
+166. 3
+167. 4
+168. 2
+169. 3
+170. 4
+171. 2
+172. 3
+173. 2
+174. 3
+175. 2
+176. 2
+177. 3
+178. 4
+179. 1
+180. 2
+181. 3
+182. 1
+183. 2
+184. 1
+185. 2
+186. 1
+187. 1
+188. 3
+189. 4
+190. 2
+191. 3
+192. 4
+193. 3
+194. 4
+195. 3
+196. 4
+197. 3
+198. 3
+199. 4
+200. 4
+CCOCN(C(C)=O)c1c(OC)c(C#N)c([N+](=O)[O-])c2nsnc12 1. 4
+CCOCN(C(C)=O)c1c(OC)c(C#N)c(S(=O)(=O)N(C)C)c2nsnc12 2. 4
+CCOCN(C(C)=O)c1c(OC)c(OC)c(C)c2nsnc12 3. 0
+CCOCN(C(C)=O)c1c(OC)c(OC)c(C(F)(F)F)c2nsnc12 4. 1
+CCOCN(C(C)=O)c1c(OC)c(OC)c(C#N)c2nsnc12 5. 2
+CCOCN(C(C)=O)c1c(OC)c(OC)c(OC)c2nsnc12 6. 0
+CCOCN(C(C)=O)c1c(OC)c(OC)c(OC(F)(F)F)c2nsnc12 7. 1
+CCOCN(C(C)=O)c1c(OC)c(OC)c(SC)c2nsnc12 8. 1
+CCOCN(C(C)=O)c1c(OC)c(OC)c(SC(F)(F)F)c2nsnc12 9. 2
+CCOCN(C(C)=O)c1c(OC)c(OC)c(Br)c2nsnc12 10. 1
+CCOCN(C(C)=O)c1c(OC)c(OC)c(N(C)C)c2nsnc12 11. 0
+CCOCN(C(C)=O)c1c(OC)c(OC)c([N+](=O)[O-])c2nsnc12 12. 4
+CCOCN(C(C)=O)c1c(OC)c(OC)c(S(=O)(=O)N(C)C)c2nsnc12 13. 4
+CCOCN(C(C)=O)c1c(OC)c(OC(F)(F)F)c(C)c2nsnc12 14. 1
+CCOCN(C(C)=O)c1c(OC)c(OC(F)(F)F)c(C(F)(F)F)c2nsnc12 15. 2
+CCOCN(C(C)=O)c1c(OC)c(OC(F)(F)F)c(C#N)c2nsnc12 16. 3
+CCOCN(C(C)=O)c1c(OC)c(OC(F)(F)F)c(OC)c2nsnc12 17. 1
+CCOCN(C(C)=O)c1c(OC)c(OC(F)(F)F)c(OC(F)(F)F)c2nsnc12 18. 2
+CCOCN(C(C)=O)c1c(OC)c(OC(F)(F)F)c(SC)c2nsnc12 19. 1
+CCOCN(C(C)=O)c1c(OC)c(OC(F)(F)F)c(SC(F)(F)F)c2nsnc12 20. 3
+CCOCN(C(C)=O)c1c(OC)c(OC(F)(F)F)c(Br)c2nsnc12 21. 1
+CCOCN(C(C)=O)c1c(OC)c(OC(F)(F)F)c(N(C)C)c2nsnc12 22. 1
+CCOCN(C(C)=O)c1c(OC)c(OC(F)(F)F)c([N+](=O)[O-])c2nsnc12 23. 4
+CCOCN(C(C)=O)c1c(OC)c(OC(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12 24. 4
+CCOCN(C(C)=O)c1c(OC)c(SC)c(C)c2nsnc12 25. 0
+CCOCN(C(C)=O)c1c(OC)c(SC)c(C(F)(F)F)c2nsnc12 26. 1
+CCOCN(C(C)=O)c1c(OC)c(SC)c(C#N)c2nsnc12 27. 2
+CCOCN(C(C)=O)c1c(OC)c(SC)c(OC)c2nsnc12 28. 0
+CCOCN(C(C)=O)c1c(OC)c(SC)c(OC(F)(F)F)c2nsnc12 29. 1
+CCOCN(C(C)=O)c1c(OC)c(SC)c(SC)c2nsnc12 30. 1
+CCOCN(C(C)=O)c1c(OC)c(SC)c(SC(F)(F)F)c2nsnc12 31. 2
+CCOCN(C(C)=O)c1c(OC)c(SC)c(Br)c2nsnc12 32. 1
+CCOCN(C(C)=O)c1c(OC)c(SC)c(N(C)C)c2nsnc12 33. 0
+CCOCN(C(C)=O)c1c(OC)c(SC)c([N+](=O)[O-])c2nsnc12 34. 2
+CCOCN(C(C)=O)c1c(OC)c(SC)c(S(=O)(=O)N(C)C)c2nsnc12 35. 3
+CCOCN(C(C)=O)c1c(OC)c(SC(F)(F)F)c(C)c2nsnc12 36. 1
+CCOCN(C(C)=O)c1c(OC)c(SC(F)(F)F)c(C(F)(F)F)c2nsnc12 37. 2
+CCOCN(C(C)=O)c1c(OC)c(SC(F)(F)F)c(C#N)c2nsnc12 38. 3
+CCOCN(C(C)=O)c1c(OC)c(SC(F)(F)F)c(OC)c2nsnc12 39. 1
+CCOCN(C(C)=O)c1c(OC)c(SC(F)(F)F)c(OC(F)(F)F)c2nsnc12 40. 2
+CCOCN(C(C)=O)c1c(OC)c(SC(F)(F)F)c(SC)c2nsnc12 41. 1
+CCOCN(C(C)=O)c1c(OC)c(SC(F)(F)F)c(SC(F)(F)F)c2nsnc12 42. 2
+CCOCN(C(C)=O)c1c(OC)c(SC(F)(F)F)c(Br)c2nsnc12 43. 1
+CCOCN(C(C)=O)c1c(OC)c(SC(F)(F)F)c(N(C)C)c2nsnc12 44. 1
+CCOCN(C(C)=O)c1c(OC)c(SC(F)(F)F)c([N+](=O)[O-])c2nsnc12 45. 3
+CCOCN(C(C)=O)c1c(OC)c(SC(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12 46. 3
+CCOCN(C(C)=O)c1c(OC)c(N(C)C)c(C)c2nsnc12 47. 0
+CCOCN(C(C)=O)c1c(OC)c(N(C)C)c(C(F)(F)F)c2nsnc12 48. 1
+CCOCN(C(C)=O)c1c(OC)c(N(C)C)c(C#N)c2nsnc12 49. 2
+CCOCN(C(C)=O)c1c(OC)c(N(C)C)c(OC)c2nsnc12 50. 0
+CCOCN(C(C)=O)c1c(OC)c(N(C)C)c(OC(F)(F)F)c2nsnc12 51. 1
+CCOCN(C(C)=O)c1c(OC)c(N(C)C)c(SC)c2nsnc12 52. 0
+CCOCN(C(C)=O)c1c(OC)c(N(C)C)c(SC(F)(F)F)c2nsnc12 53. 1
+CCOCN(C(C)=O)c1c(OC)c(N(C)C)c(Br)c2nsnc12 54. 1
+CCOCN(C(C)=O)c1c(OC)c(N(C)C)c(N(C)C)c2nsnc12 55. 0
+CCOCN(C(C)=O)c1c(OC)c(N(C)C)c([N+](=O)[O-])c2nsnc12 56. 3
+CCOCN(C(C)=O)c1c(OC)c(N(C)C)c(S(=O)(=O)N(C)C)c2nsnc12 57. 3
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C)c(C)c2nsnc12 58. 1
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C)c(C(F)(F)F)c2nsnc12 59. 2
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C)c(C#N)c2nsnc12 60. 3
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C)c(OC)c2nsnc12 61. 1
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C)c(OC(F)(F)F)c2nsnc12 62. 2
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C)c(SC)c2nsnc12 63. 1
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C)c(SC(F)(F)F)c2nsnc12 64. 2
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C)c(Br)c2nsnc12 65. 1
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C)c(N(C)C)c2nsnc12 66. 1
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C)c([N+](=O)[O-])c2nsnc12 67. 3
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C)c(S(=O)(=O)N(C)C)c2nsnc12 68. 3
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C(F)(F)F)c(C)c2nsnc12 69. 2
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C(F)(F)F)c(C(F)(F)F)c2nsnc12 70. 3
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C(F)(F)F)c(C#N)c2nsnc12 71. 3
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C(F)(F)F)c(OC)c2nsnc12 72. 2
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C(F)(F)F)c(OC(F)(F)F)c2nsnc12 73. 3
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C(F)(F)F)c(SC)c2nsnc12 74. 2
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C(F)(F)F)c(SC(F)(F)F)c2nsnc12 75. 3
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C(F)(F)F)c(Br)c2nsnc12 76. 2
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C(F)(F)F)c(N(C)C)c2nsnc12 77. 2
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C(F)(F)F)c([N+](=O)[O-])c2nsnc12 78. 4
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12 79. 4
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C#N)c(C)c2nsnc12 80. 3
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C#N)c(C(F)(F)F)c2nsnc12 81. 4
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C#N)c(C#N)c2nsnc12 82. 4
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C#N)c(OC)c2nsnc12 83. 3
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C#N)c(OC(F)(F)F)c2nsnc12 84. 4
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C#N)c(SC)c2nsnc12 85. 3
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C#N)c(SC(F)(F)F)c2nsnc12 86. 4
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C#N)c(Br)c2nsnc12 87. 3
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C#N)c(N(C)C)c2nsnc12 88. 3
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C#N)c([N+](=O)[O-])c2nsnc12 89. 4
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(C#N)c(S(=O)(=O)N(C)C)c2nsnc12 90. 4
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC)c(C)c2nsnc12 91. 2
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC)c(C(F)(F)F)c2nsnc12 92. 3
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC)c(C#N)c2nsnc12 93. 3
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC)c(OC)c2nsnc12 94. 2
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC)c(OC(F)(F)F)c2nsnc12 95. 3
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC)c(SC)c2nsnc12 96. 2
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC)c(SC(F)(F)F)c2nsnc12 97. 3
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC)c(Br)c2nsnc12 98. 2
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC)c(N(C)C)c2nsnc12 99. 2
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC)c([N+](=O)[O-])c2nsnc12 100. 4
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC)c(S(=O)(=O)N(C)C)c2nsnc12 101. 4
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC(F)(F)F)c(C)c2nsnc12 102. 2
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC(F)(F)F)c(C(F)(F)F)c2nsnc12 103. 3
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC(F)(F)F)c(C#N)c2nsnc12 104. 4
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC(F)(F)F)c(OC)c2nsnc12 105. 3
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC(F)(F)F)c(OC(F)(F)F)c2nsnc12 106. 4
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC(F)(F)F)c(SC)c2nsnc12 107. 3
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC(F)(F)F)c(SC(F)(F)F)c2nsnc12 108. 4
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC(F)(F)F)c(Br)c2nsnc12 109. 3
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC(F)(F)F)c(N(C)C)c2nsnc12 110. 3
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC(F)(F)F)c([N+](=O)[O-])c2nsnc12 111. 4
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(OC(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12 112. 4
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC)c(C)c2nsnc12 113. 1
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC)c(C(F)(F)F)c2nsnc12 114. 2
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC)c(C#N)c2nsnc12 115. 3
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC)c(OC)c2nsnc12 116. 1
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC)c(OC(F)(F)F)c2nsnc12 117. 2
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC)c(SC)c2nsnc12 118. 2
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC)c(SC(F)(F)F)c2nsnc12 119. 3
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC)c(Br)c2nsnc12 120. 2
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC)c(N(C)C)c2nsnc12 121. 2
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC)c([N+](=O)[O-])c2nsnc12 122. 4
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC)c(S(=O)(=O)N(C)C)c2nsnc12 123. 4
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC(F)(F)F)c(C)c2nsnc12 124. 2
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC(F)(F)F)c(C(F)(F)F)c2nsnc12 125. 3
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC(F)(F)F)c(C#N)c2nsnc12 126. 4
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC(F)(F)F)c(OC)c2nsnc12 127. 3
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC(F)(F)F)c(OC(F)(F)F)c2nsnc12 128. 4
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC(F)(F)F)c(SC)c2nsnc12 129. 3
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC(F)(F)F)c(SC(F)(F)F)c2nsnc12 130. 4
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC(F)(F)F)c(Br)c2nsnc12 131. 3
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC(F)(F)F)c(N(C)C)c2nsnc12 132. 3
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC(F)(F)F)c([N+](=O)[O-])c2nsnc12 133. 4
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(SC(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12 134. 4
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(N(C)C)c(C)c2nsnc12 135. 2
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(N(C)C)c(C(F)(F)F)c2nsnc12 136. 3
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(N(C)C)c(C#N)c2nsnc12 137. 4
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(N(C)C)c(OC)c2nsnc12 138. 3
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(N(C)C)c(OC(F)(F)F)c2nsnc12 139. 4
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(N(C)C)c(SC)c2nsnc12 140. 3
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(N(C)C)c(SC(F)(F)F)c2nsnc12 141. 4
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(N(C)C)c(Br)c2nsnc12 142. 3
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(N(C)C)c(N(C)C)c2nsnc12 143. 3
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(N(C)C)c([N+](=O)[O-])c2nsnc12 144. 4
+CCOCN(C(C)=O)c1c(OC(F)(F)F)c(N(C)C)c(S(=O)(=O)N(C)C)c2nsnc12 145. 4
+CCOCN(C(C)=O)c1c(SC)c(C)c(C)c2nsnc12 146. 0
+CCOCN(C(C)=O)c1c(SC)c(C)c(C(F)(F)F)c2nsnc12 147. 1
+CCOCN(C(C)=O)c1c(SC)c(C)c(C#N)c2nsnc12 148. 2
+CCOCN(C(C)=O)c1c(SC)c(C)c(OC)c2nsnc12 149. 0
+CCOCN(C(C)=O)c1c(SC)c(C)c(OC(F)(F)F)c2nsnc12 150. 1
+CCOCN(C(C)=O)c1c(SC)c(C)c(SC)c2nsnc12 151. 1
+CCOCN(C(C)=O)c1c(SC)c(C)c(SC(F)(F)F)c2nsnc12 152. 2
+CCOCN(C(C)=O)c1c(SC)c(C)c(Br)c2nsnc12 153. 1
+CCOCN(C(C)=O)c1c(SC)c(C)c(N(C)C)c2nsnc12 154. 0
+CCOCN(C(C)=O)c1c(SC)c(C)c([N+](=O)[O-])c2nsnc12 155. 2
+CCOCN(C(C)=O)c1c(SC)c(C)c(S(=O)(=O)N(C)C)c2nsnc12 156. 3
+CCOCN(C(C)=O)c1c(SC)c(C(F)(F)F)c(C)c2nsnc12 157. 1
+CCOCN(C(C)=O)c1c(SC)c(C(F)(F)F)c(C(F)(F)F)c2nsnc12 158. 2
+CCOCN(C(C)=O)c1c(SC)c(C(F)(F)F)c(C#N)c2nsnc12 159. 3
+CCOCN(C(C)=O)c1c(SC)c(C(F)(F)F)c(OC)c2nsnc12 160. 1
+CCOCN(C(C)=O)c1c(SC)c(C(F)(F)F)c(OC(F)(F)F)c2nsnc12 161. 2
+CCOCN(C(C)=O)c1c(SC)c(C(F)(F)F)c(SC)c2nsnc12 162. 1
+CCOCN(C(C)=O)c1c(SC)c(C(F)(F)F)c(SC(F)(F)F)c2nsnc12 163. 2
+CCOCN(C(C)=O)c1c(SC)c(C(F)(F)F)c(Br)c2nsnc12 164. 1
+CCOCN(C(C)=O)c1c(SC)c(C(F)(F)F)c(N(C)C)c2nsnc12 165. 1
+CCOCN(C(C)=O)c1c(SC)c(C(F)(F)F)c([N+](=O)[O-])c2nsnc12 166. 3
+CCOCN(C(C)=O)c1c(SC)c(C(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12 167. 4
+CCOCN(C(C)=O)c1c(SC)c(C#N)c(C)c2nsnc12 168. 2
+CCOCN(C(C)=O)c1c(SC)c(C#N)c(C(F)(F)F)c2nsnc12 169. 3
+CCOCN(C(C)=O)c1c(SC)c(C#N)c(C#N)c2nsnc12 170. 4
+CCOCN(C(C)=O)c1c(SC)c(C#N)c(OC)c2nsnc12 171. 2
+CCOCN(C(C)=O)c1c(SC)c(C#N)c(OC(F)(F)F)c2nsnc12 172. 3
+CCOCN(C(C)=O)c1c(SC)c(C#N)c(SC)c2nsnc12 173. 2
+CCOCN(C(C)=O)c1c(SC)c(C#N)c(SC(F)(F)F)c2nsnc12 174. 3
+CCOCN(C(C)=O)c1c(SC)c(C#N)c(Br)c2nsnc12 175. 2
+CCOCN(C(C)=O)c1c(SC)c(C#N)c(N(C)C)c2nsnc12 176. 2
+CCOCN(C(C)=O)c1c(SC)c(C#N)c([N+](=O)[O-])c2nsnc12 177. 3
+CCOCN(C(C)=O)c1c(SC)c(C#N)c(S(=O)(=O)N(C)C)c2nsnc12 178. 4
+CCOCN(C(C)=O)c1c(SC)c(OC)c(C)c2nsnc12 179. 1
+CCOCN(C(C)=O)c1c(SC)c(OC)c(C(F)(F)F)c2nsnc12 180. 2
+CCOCN(C(C)=O)c1c(SC)c(OC)c(C#N)c2nsnc12 181. 3
+CCOCN(C(C)=O)c1c(SC)c(OC)c(OC)c2nsnc12 182. 1
+CCOCN(C(C)=O)c1c(SC)c(OC)c(OC(F)(F)F)c2nsnc12 183. 2
+CCOCN(C(C)=O)c1c(SC)c(OC)c(SC)c2nsnc12 184. 1
+CCOCN(C(C)=O)c1c(SC)c(OC)c(SC(F)(F)F)c2nsnc12 185. 2
+CCOCN(C(C)=O)c1c(SC)c(OC)c(Br)c2nsnc12 186. 1
+CCOCN(C(C)=O)c1c(SC)c(OC)c(N(C)C)c2nsnc12 187. 1
+CCOCN(C(C)=O)c1c(SC)c(OC)c([N+](=O)[O-])c2nsnc12 188. 3
+CCOCN(C(C)=O)c1c(SC)c(OC)c(S(=O)(=O)N(C)C)c2nsnc12 189. 4
+CCOCN(C(C)=O)c1c(SC)c(OC(F)(F)F)c(C)c2nsnc12 190. 2
+CCOCN(C(C)=O)c1c(SC)c(OC(F)(F)F)c(C(F)(F)F)c2nsnc12 191. 3
+CCOCN(C(C)=O)c1c(SC)c(OC(F)(F)F)c(C#N)c2nsnc12 192. 4
+CCOCN(C(C)=O)c1c(SC)c(OC(F)(F)F)c(OC)c2nsnc12 193. 3
+CCOCN(C(C)=O)c1c(SC)c(OC(F)(F)F)c(OC(F)(F)F)c2nsnc12 194. 4
+CCOCN(C(C)=O)c1c(SC)c(OC(F)(F)F)c(SC)c2nsnc12 195. 3
+CCOCN(C(C)=O)c1c(SC)c(OC(F)(F)F)c(SC(F)(F)F)c2nsnc12 196. 4
+CCOCN(C(C)=O)c1c(SC)c(OC(F)(F)F)c(Br)c2nsnc12 197. 3
+CCOCN(C(C)=O)c1c(SC)c(OC(F)(F)F)c(N(C)C)c2nsnc12 198. 3
+CCOCN(C(C)=O)c1c(SC)c(OC(F)(F)F)c([N+](=O)[O-])c2nsnc12 199. 4
+CCOCN(C(C)=O)c1c(SC)c(OC(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12 200. 4
+You are a chemist, please use the molecules provided, group them into five clusters based on their redox potential (extremely low : 0, low: 1, medium: 2, high: 3, extremely high :4). Analyze the following features for each molecule: Number and type of electron-withdrawing groups (e.g., CF₃, NO₂, CN, halogens). Number and type of electron-donating groups (e.g., alkyl, methoxy, hydroxyl). Positioning of substituents on aromatic rings (meta, para, ortho). Presence of sulfur-containing functional groups (e.g., SCF₃, S=O). Degree of molecular polarity (based on F, O, or N atoms). Use these criteria to evaluate the redox potential qualitatively and cluster the molecules accordingly.**Respond strictly with the numerical cluster labels only. Do not include any additional text.**
+Now please cluster the following molecules:
+1. CCOCN(C(C)=O)c1c(SC)c(SC)c(C)c2nsnc12
+2. CCOCN(C(C)=O)c1c(SC)c(SC)c(C(F)(F)F)c2nsnc12
+3. CCOCN(C(C)=O)c1c(SC)c(SC)c(C#N)c2nsnc12
+4. CCOCN(C(C)=O)c1c(SC)c(SC)c(OC)c2nsnc12
+5. CCOCN(C(C)=O)c1c(SC)c(SC)c(OC(F)(F)F)c2nsnc12
+6. CCOCN(C(C)=O)c1c(SC)c(SC)c(SC)c2nsnc12
+7. CCOCN(C(C)=O)c1c(SC)c(SC)c(SC(F)(F)F)c2nsnc12
+8. CCOCN(C(C)=O)c1c(SC)c(SC)c(Br)c2nsnc12
+9. CCOCN(C(C)=O)c1c(SC)c(SC)c(N(C)C)c2nsnc12
+10. CCOCN(C(C)=O)c1c(SC)c(SC)c([N+](=O)[O-])c2nsnc12
+11. CCOCN(C(C)=O)c1c(SC)c(SC)c(S(=O)(=O)N(C)C)c2nsnc12
+12. CCOCN(C(C)=O)c1c(SC)c(SC(F)(F)F)c(C)c2nsnc12
+13. CCOCN(C(C)=O)c1c(SC)c(SC(F)(F)F)c(C(F)(F)F)c2nsnc12
+14. CCOCN(C(C)=O)c1c(SC)c(SC(F)(F)F)c(C#N)c2nsnc12
+15. CCOCN(C(C)=O)c1c(SC)c(SC(F)(F)F)c(OC)c2nsnc12
+16. CCOCN(C(C)=O)c1c(SC)c(SC(F)(F)F)c(OC(F)(F)F)c2nsnc12
+17. CCOCN(C(C)=O)c1c(SC)c(SC(F)(F)F)c(SC)c2nsnc12
+18. CCOCN(C(C)=O)c1c(SC)c(SC(F)(F)F)c(SC(F)(F)F)c2nsnc12
+19. CCOCN(C(C)=O)c1c(SC)c(SC(F)(F)F)c(Br)c2nsnc12
+20. CCOCN(C(C)=O)c1c(SC)c(SC(F)(F)F)c(N(C)C)c2nsnc12
+21. CCOCN(C(C)=O)c1c(SC)c(SC(F)(F)F)c([N+](=O)[O-])c2nsnc12
+22. CCOCN(C(C)=O)c1c(SC)c(SC(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12
+23. CCOCN(C(C)=O)c1c(SC)c(N(C)C)c(C)c2nsnc12
+24. CCOCN(C(C)=O)c1c(SC)c(N(C)C)c(C(F)(F)F)c2nsnc12
+25. CCOCN(C(C)=O)c1c(SC)c(N(C)C)c(C#N)c2nsnc12
+26. CCOCN(C(C)=O)c1c(SC)c(N(C)C)c(OC)c2nsnc12
+27. CCOCN(C(C)=O)c1c(SC)c(N(C)C)c(OC(F)(F)F)c2nsnc12
+28. CCOCN(C(C)=O)c1c(SC)c(N(C)C)c(SC)c2nsnc12
+29. CCOCN(C(C)=O)c1c(SC)c(N(C)C)c(SC(F)(F)F)c2nsnc12
+30. CCOCN(C(C)=O)c1c(SC)c(N(C)C)c(Br)c2nsnc12
+31. CCOCN(C(C)=O)c1c(SC)c(N(C)C)c(N(C)C)c2nsnc12
+32. CCOCN(C(C)=O)c1c(SC)c(N(C)C)c([N+](=O)[O-])c2nsnc12
+33. CCOCN(C(C)=O)c1c(SC)c(N(C)C)c(S(=O)(=O)N(C)C)c2nsnc12
+34. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C)c(C)c2nsnc12
+35. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C)c(C(F)(F)F)c2nsnc12
+36. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C)c(C#N)c2nsnc12
+37. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C)c(OC)c2nsnc12
+38. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C)c(OC(F)(F)F)c2nsnc12
+39. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C)c(SC)c2nsnc12
+40. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C)c(SC(F)(F)F)c2nsnc12
+41. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C)c(Br)c2nsnc12
+42. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C)c(N(C)C)c2nsnc12
+43. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C)c([N+](=O)[O-])c2nsnc12
+44. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C)c(S(=O)(=O)N(C)C)c2nsnc12
+45. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C(F)(F)F)c(C)c2nsnc12
+46. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C(F)(F)F)c(C(F)(F)F)c2nsnc12
+47. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C(F)(F)F)c(C#N)c2nsnc12
+48. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C(F)(F)F)c(OC)c2nsnc12
+49. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C(F)(F)F)c(OC(F)(F)F)c2nsnc12
+50. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C(F)(F)F)c(SC)c2nsnc12
+51. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C(F)(F)F)c(SC(F)(F)F)c2nsnc12
+52. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C(F)(F)F)c(Br)c2nsnc12
+53. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C(F)(F)F)c(N(C)C)c2nsnc12
+54. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C(F)(F)F)c([N+](=O)[O-])c2nsnc12
+55. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12
+56. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C#N)c(C)c2nsnc12
+57. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C#N)c(C(F)(F)F)c2nsnc12
+58. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C#N)c(C#N)c2nsnc12
+59. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C#N)c(OC)c2nsnc12
+60. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C#N)c(OC(F)(F)F)c2nsnc12
+61. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C#N)c(SC)c2nsnc12
+62. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C#N)c(SC(F)(F)F)c2nsnc12
+63. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C#N)c(Br)c2nsnc12
+64. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C#N)c(N(C)C)c2nsnc12
+65. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C#N)c([N+](=O)[O-])c2nsnc12
+66. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C#N)c(S(=O)(=O)N(C)C)c2nsnc12
+67. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC)c(C)c2nsnc12
+68. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC)c(C(F)(F)F)c2nsnc12
+69. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC)c(C#N)c2nsnc12
+70. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC)c(OC)c2nsnc12
+71. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC)c(OC(F)(F)F)c2nsnc12
+72. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC)c(SC)c2nsnc12
+73. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC)c(SC(F)(F)F)c2nsnc12
+74. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC)c(Br)c2nsnc12
+75. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC)c(N(C)C)c2nsnc12
+76. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC)c([N+](=O)[O-])c2nsnc12
+77. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC)c(S(=O)(=O)N(C)C)c2nsnc12
+78. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC(F)(F)F)c(C)c2nsnc12
+79. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC(F)(F)F)c(C(F)(F)F)c2nsnc12
+80. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC(F)(F)F)c(C#N)c2nsnc12
+81. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC(F)(F)F)c(OC)c2nsnc12
+82. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC(F)(F)F)c(OC(F)(F)F)c2nsnc12
+83. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC(F)(F)F)c(SC)c2nsnc12
+84. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC(F)(F)F)c(SC(F)(F)F)c2nsnc12
+85. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC(F)(F)F)c(Br)c2nsnc12
+86. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC(F)(F)F)c(N(C)C)c2nsnc12
+87. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC(F)(F)F)c([N+](=O)[O-])c2nsnc12
+88. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12
+89. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC)c(C)c2nsnc12
+90. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC)c(C(F)(F)F)c2nsnc12
+91. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC)c(C#N)c2nsnc12
+92. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC)c(OC)c2nsnc12
+93. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC)c(OC(F)(F)F)c2nsnc12
+94. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC)c(SC)c2nsnc12
+95. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC)c(SC(F)(F)F)c2nsnc12
+96. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC)c(Br)c2nsnc12
+97. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC)c(N(C)C)c2nsnc12
+98. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC)c([N+](=O)[O-])c2nsnc12
+99. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC)c(S(=O)(=O)N(C)C)c2nsnc12
+100. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC(F)(F)F)c(C)c2nsnc12
+101. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC(F)(F)F)c(C(F)(F)F)c2nsnc12
+102. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC(F)(F)F)c(C#N)c2nsnc12
+103. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC(F)(F)F)c(OC)c2nsnc12
+104. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC(F)(F)F)c(OC(F)(F)F)c2nsnc12
+105. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC(F)(F)F)c(SC)c2nsnc12
+106. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC(F)(F)F)c(SC(F)(F)F)c2nsnc12
+107. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC(F)(F)F)c(Br)c2nsnc12
+108. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC(F)(F)F)c(N(C)C)c2nsnc12
+109. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC(F)(F)F)c([N+](=O)[O-])c2nsnc12
+110. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12
+111. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(N(C)C)c(C)c2nsnc12
+112. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(N(C)C)c(C(F)(F)F)c2nsnc12
+113. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(N(C)C)c(C#N)c2nsnc12
+114. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(N(C)C)c(OC)c2nsnc12
+115. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(N(C)C)c(OC(F)(F)F)c2nsnc12
+116. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(N(C)C)c(SC)c2nsnc12
+117. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(N(C)C)c(SC(F)(F)F)c2nsnc12
+118. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(N(C)C)c(Br)c2nsnc12
+119. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(N(C)C)c(N(C)C)c2nsnc12
+120. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(N(C)C)c([N+](=O)[O-])c2nsnc12
+121. CCOCN(C(C)=O)c1c(SC(F)(F)F)c(N(C)C)c(S(=O)(=O)N(C)C)c2nsnc12
+122. CCOCN(C(C)=O)c1c(N(C)C)c(C)c(C)c2nsnc12
+123. CCOCN(C(C)=O)c1c(N(C)C)c(C)c(C(F)(F)F)c2nsnc12
+124. CCOCN(C(C)=O)c1c(N(C)C)c(C)c(C#N)c2nsnc12
+125. CCOCN(C(C)=O)c1c(N(C)C)c(C)c(OC)c2nsnc12
+126. CCOCN(C(C)=O)c1c(N(C)C)c(C)c(OC(F)(F)F)c2nsnc12
+127. CCOCN(C(C)=O)c1c(N(C)C)c(C)c(SC)c2nsnc12
+128. CCOCN(C(C)=O)c1c(N(C)C)c(C)c(SC(F)(F)F)c2nsnc12
+129. CCOCN(C(C)=O)c1c(N(C)C)c(C)c(Br)c2nsnc12
+130. CCOCN(C(C)=O)c1c(N(C)C)c(C)c(N(C)C)c2nsnc12
+131. CCOCN(C(C)=O)c1c(N(C)C)c(C)c([N+](=O)[O-])c2nsnc12
+132. CCOCN(C(C)=O)c1c(N(C)C)c(C)c(S(=O)(=O)N(C)C)c2nsnc12
+133. CCOCN(C(C)=O)c1c(N(C)C)c(C(F)(F)F)c(C)c2nsnc12
+134. CCOCN(C(C)=O)c1c(N(C)C)c(C(F)(F)F)c(C(F)(F)F)c2nsnc12
+135. CCOCN(C(C)=O)c1c(N(C)C)c(C(F)(F)F)c(C#N)c2nsnc12
+136. CCOCN(C(C)=O)c1c(N(C)C)c(C(F)(F)F)c(OC)c2nsnc12
+137. CCOCN(C(C)=O)c1c(N(C)C)c(C(F)(F)F)c(OC(F)(F)F)c2nsnc12
+138. CCOCN(C(C)=O)c1c(N(C)C)c(C(F)(F)F)c(SC)c2nsnc12
+139. CCOCN(C(C)=O)c1c(N(C)C)c(C(F)(F)F)c(SC(F)(F)F)c2nsnc12
+140. CCOCN(C(C)=O)c1c(N(C)C)c(C(F)(F)F)c(Br)c2nsnc12
+141. CCOCN(C(C)=O)c1c(N(C)C)c(C(F)(F)F)c(N(C)C)c2nsnc12
+142. CCOCN(C(C)=O)c1c(N(C)C)c(C(F)(F)F)c([N+](=O)[O-])c2nsnc12
+143. CCOCN(C(C)=O)c1c(N(C)C)c(C(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12
+144. CCOCN(C(C)=O)c1c(N(C)C)c(C#N)c(C)c2nsnc12
+145. CCOCN(C(C)=O)c1c(N(C)C)c(C#N)c(C(F)(F)F)c2nsnc12
+146. CCOCN(C(C)=O)c1c(N(C)C)c(C#N)c(C#N)c2nsnc12
+147. CCOCN(C(C)=O)c1c(N(C)C)c(C#N)c(OC)c2nsnc12
+148. CCOCN(C(C)=O)c1c(N(C)C)c(C#N)c(OC(F)(F)F)c2nsnc12
+149. CCOCN(C(C)=O)c1c(N(C)C)c(C#N)c(SC)c2nsnc12
+150. CCOCN(C(C)=O)c1c(N(C)C)c(C#N)c(SC(F)(F)F)c2nsnc12
+151. CCOCN(C(C)=O)c1c(N(C)C)c(C#N)c(Br)c2nsnc12
+152. CCOCN(C(C)=O)c1c(N(C)C)c(C#N)c(N(C)C)c2nsnc12
+153. CCOCN(C(C)=O)c1c(N(C)C)c(C#N)c([N+](=O)[O-])c2nsnc12
+154. CCOCN(C(C)=O)c1c(N(C)C)c(C#N)c(S(=O)(=O)N(C)C)c2nsnc12
+155. CCOCN(C(C)=O)c1c(N(C)C)c(OC)c(C)c2nsnc12
+156. CCOCN(C(C)=O)c1c(N(C)C)c(OC)c(C(F)(F)F)c2nsnc12
+157. CCOCN(C(C)=O)c1c(N(C)C)c(OC)c(C#N)c2nsnc12
+158. CCOCN(C(C)=O)c1c(N(C)C)c(OC)c(OC)c2nsnc12
+159. CCOCN(C(C)=O)c1c(N(C)C)c(OC)c(OC(F)(F)F)c2nsnc12
+160. CCOCN(C(C)=O)c1c(N(C)C)c(OC)c(SC)c2nsnc12
+161. CCOCN(C(C)=O)c1c(N(C)C)c(OC)c(SC(F)(F)F)c2nsnc12
+162. CCOCN(C(C)=O)c1c(N(C)C)c(OC)c(Br)c2nsnc12
+163. CCOCN(C(C)=O)c1c(N(C)C)c(OC)c(N(C)C)c2nsnc12
+164. CCOCN(C(C)=O)c1c(N(C)C)c(OC)c([N+](=O)[O-])c2nsnc12
+165. CCOCN(C(C)=O)c1c(N(C)C)c(OC)c(S(=O)(=O)N(C)C)c2nsnc12
+166. CCOCN(C(C)=O)c1c(N(C)C)c(OC(F)(F)F)c(C)c2nsnc12
+167. CCOCN(C(C)=O)c1c(N(C)C)c(OC(F)(F)F)c(C(F)(F)F)c2nsnc12
+168. CCOCN(C(C)=O)c1c(N(C)C)c(OC(F)(F)F)c(C#N)c2nsnc12
+169. CCOCN(C(C)=O)c1c(N(C)C)c(OC(F)(F)F)c(OC)c2nsnc12
+170. CCOCN(C(C)=O)c1c(N(C)C)c(OC(F)(F)F)c(OC(F)(F)F)c2nsnc12
+171. CCOCN(C(C)=O)c1c(N(C)C)c(OC(F)(F)F)c(SC)c2nsnc12
+172. CCOCN(C(C)=O)c1c(N(C)C)c(OC(F)(F)F)c(SC(F)(F)F)c2nsnc12
+173. CCOCN(C(C)=O)c1c(N(C)C)c(OC(F)(F)F)c(Br)c2nsnc12
+174. CCOCN(C(C)=O)c1c(N(C)C)c(OC(F)(F)F)c(N(C)C)c2nsnc12
+175. CCOCN(C(C)=O)c1c(N(C)C)c(OC(F)(F)F)c([N+](=O)[O-])c2nsnc12
+176. CCOCN(C(C)=O)c1c(N(C)C)c(OC(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12
+177. CCOCN(C(C)=O)c1c(N(C)C)c(SC)c(C)c2nsnc12
+178. CCOCN(C(C)=O)c1c(N(C)C)c(SC)c(C(F)(F)F)c2nsnc12
+179. CCOCN(C(C)=O)c1c(N(C)C)c(SC)c(C#N)c2nsnc12
+180. CCOCN(C(C)=O)c1c(N(C)C)c(SC)c(OC)c2nsnc12
+181. CCOCN(C(C)=O)c1c(N(C)C)c(SC)c(OC(F)(F)F)c2nsnc12
+182. CCOCN(C(C)=O)c1c(N(C)C)c(SC)c(SC)c2nsnc12
+183. CCOCN(C(C)=O)c1c(N(C)C)c(SC)c(SC(F)(F)F)c2nsnc12
+184. CCOCN(C(C)=O)c1c(N(C)C)c(SC)c(Br)c2nsnc12
+185. CCOCN(C(C)=O)c1c(N(C)C)c(SC)c(N(C)C)c2nsnc12
+186. CCOCN(C(C)=O)c1c(N(C)C)c(SC)c([N+](=O)[O-])c2nsnc12
+187. CCOCN(C(C)=O)c1c(N(C)C)c(SC)c(S(=O)(=O)N(C)C)c2nsnc12
+188. CCOCN(C(C)=O)c1c(N(C)C)c(SC(F)(F)F)c(C)c2nsnc12
+189. CCOCN(C(C)=O)c1c(N(C)C)c(SC(F)(F)F)c(C(F)(F)F)c2nsnc12
+190. CCOCN(C(C)=O)c1c(N(C)C)c(SC(F)(F)F)c(C#N)c2nsnc12
+191. CCOCN(C(C)=O)c1c(N(C)C)c(SC(F)(F)F)c(OC)c2nsnc12
+192. CCOCN(C(C)=O)c1c(N(C)C)c(SC(F)(F)F)c(OC(F)(F)F)c2nsnc12
+193. CCOCN(C(C)=O)c1c(N(C)C)c(SC(F)(F)F)c(SC)c2nsnc12
+194. CCOCN(C(C)=O)c1c(N(C)C)c(SC(F)(F)F)c(SC(F)(F)F)c2nsnc12
+195. CCOCN(C(C)=O)c1c(N(C)C)c(SC(F)(F)F)c(Br)c2nsnc12
+196. CCOCN(C(C)=O)c1c(N(C)C)c(SC(F)(F)F)c(N(C)C)c2nsnc12
+197. CCOCN(C(C)=O)c1c(N(C)C)c(SC(F)(F)F)c([N+](=O)[O-])c2nsnc12
+198. CCOCN(C(C)=O)c1c(N(C)C)c(SC(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12
+199. CCOCN(C(C)=O)c1c(N(C)C)c(N(C)C)c(C)c2nsnc12
+200. CCOCN(C(C)=O)c1c(N(C)C)c(N(C)C)c(C(F)(F)F)c2nsnc12
+
+1. 1
+2. 2
+3. 2
+4. 0
+5. 1
+6. 0
+7. 1
+8. 1
+9. 0
+10. 3
+11. 3
+12. 1
+13. 2
+14. 2
+15. 1
+16. 2
+17. 1
+18. 2
+19. 2
+20. 1
+21. 4
+22. 4
+23. 0
+24. 1
+25. 1
+26. 0
+27. 1
+28. 0
+29. 1
+30. 1
+31. 0
+32. 2
+33. 3
+34. 1
+35. 2
+36. 2
+37. 1
+38. 2
+39. 1
+40. 2
+41. 2
+42. 1
+43. 3
+44. 3
+45. 2
+46. 3
+47. 2
+48. 2
+49. 3
+50. 2
+51. 3
+52. 2
+53. 2
+54. 4
+55. 4
+56. 2
+57. 3
+58. 3
+59. 2
+60. 3
+61. 2
+62. 3
+63. 3
+64. 2
+65. 4
+66. 4
+67. 1
+68. 2
+69. 2
+70. 1
+71. 2
+72. 1
+73. 2
+74. 2
+75. 1
+76. 3
+77. 3
+78. 2
+79. 3
+80. 3
+81. 2
+82. 3
+83. 2
+84. 3
+85. 2
+86. 2
+87. 4
+88. 4
+89. 1
+90. 2
+91. 2
+92. 1
+93. 2
+94. 1
+95. 2
+96. 2
+97. 1
+98. 3
+99. 3
+100. 2
+101. 3
+102. 3
+103. 2
+104. 3
+105. 3
+106. 4
+107. 3
+108. 3
+109. 4
+110. 4
+111. 0
+112. 1
+113. 1
+114. 0
+115. 1
+116. 0
+117. 1
+118. 1
+119. 0
+120. 2
+121. 3
+122. 0
+123. 1
+124. 1
+125. 0
+126. 1
+127. 0
+128. 1
+129. 1
+130. 0
+131. 2
+132. 3
+133. 1
+134. 2
+135. 2
+136. 1
+137. 2
+138. 1
+139. 2
+140. 2
+141. 1
+142. 3
+143. 3
+144. 1
+145. 2
+146. 2
+147. 1
+148. 2
+149. 1
+150. 2
+151. 2
+152. 1
+153. 3
+154. 3
+155. 0
+156. 1
+157. 1
+158. 0
+159. 1
+160. 0
+161. 1
+162. 1
+163. 0
+164. 2
+165. 3
+166. 1
+167. 2
+168. 2
+169. 1
+170. 2
+171. 1
+172. 2
+173. 2
+174. 1
+175. 3
+176. 3
+177. 0
+178. 1
+179. 1
+180. 0
+181. 1
+182. 0
+183. 1
+184. 1
+185. 0
+186. 2
+187. 3
+188. 1
+189. 2
+190. 2
+191. 1
+192. 2
+193. 1
+194. 2
+195. 2
+196. 1
+197. 3
+198. 3
+199. 0
+200. 1
+CCOCN(C(C)=O)c1c(SC)c(SC)c(C)c2nsnc12 1. 1
+CCOCN(C(C)=O)c1c(SC)c(SC)c(C(F)(F)F)c2nsnc12 2. 2
+CCOCN(C(C)=O)c1c(SC)c(SC)c(C#N)c2nsnc12 3. 2
+CCOCN(C(C)=O)c1c(SC)c(SC)c(OC)c2nsnc12 4. 0
+CCOCN(C(C)=O)c1c(SC)c(SC)c(OC(F)(F)F)c2nsnc12 5. 1
+CCOCN(C(C)=O)c1c(SC)c(SC)c(SC)c2nsnc12 6. 0
+CCOCN(C(C)=O)c1c(SC)c(SC)c(SC(F)(F)F)c2nsnc12 7. 1
+CCOCN(C(C)=O)c1c(SC)c(SC)c(Br)c2nsnc12 8. 1
+CCOCN(C(C)=O)c1c(SC)c(SC)c(N(C)C)c2nsnc12 9. 0
+CCOCN(C(C)=O)c1c(SC)c(SC)c([N+](=O)[O-])c2nsnc12 10. 3
+CCOCN(C(C)=O)c1c(SC)c(SC)c(S(=O)(=O)N(C)C)c2nsnc12 11. 3
+CCOCN(C(C)=O)c1c(SC)c(SC(F)(F)F)c(C)c2nsnc12 12. 1
+CCOCN(C(C)=O)c1c(SC)c(SC(F)(F)F)c(C(F)(F)F)c2nsnc12 13. 2
+CCOCN(C(C)=O)c1c(SC)c(SC(F)(F)F)c(C#N)c2nsnc12 14. 2
+CCOCN(C(C)=O)c1c(SC)c(SC(F)(F)F)c(OC)c2nsnc12 15. 1
+CCOCN(C(C)=O)c1c(SC)c(SC(F)(F)F)c(OC(F)(F)F)c2nsnc12 16. 2
+CCOCN(C(C)=O)c1c(SC)c(SC(F)(F)F)c(SC)c2nsnc12 17. 1
+CCOCN(C(C)=O)c1c(SC)c(SC(F)(F)F)c(SC(F)(F)F)c2nsnc12 18. 2
+CCOCN(C(C)=O)c1c(SC)c(SC(F)(F)F)c(Br)c2nsnc12 19. 2
+CCOCN(C(C)=O)c1c(SC)c(SC(F)(F)F)c(N(C)C)c2nsnc12 20. 1
+CCOCN(C(C)=O)c1c(SC)c(SC(F)(F)F)c([N+](=O)[O-])c2nsnc12 21. 4
+CCOCN(C(C)=O)c1c(SC)c(SC(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12 22. 4
+CCOCN(C(C)=O)c1c(SC)c(N(C)C)c(C)c2nsnc12 23. 0
+CCOCN(C(C)=O)c1c(SC)c(N(C)C)c(C(F)(F)F)c2nsnc12 24. 1
+CCOCN(C(C)=O)c1c(SC)c(N(C)C)c(C#N)c2nsnc12 25. 1
+CCOCN(C(C)=O)c1c(SC)c(N(C)C)c(OC)c2nsnc12 26. 0
+CCOCN(C(C)=O)c1c(SC)c(N(C)C)c(OC(F)(F)F)c2nsnc12 27. 1
+CCOCN(C(C)=O)c1c(SC)c(N(C)C)c(SC)c2nsnc12 28. 0
+CCOCN(C(C)=O)c1c(SC)c(N(C)C)c(SC(F)(F)F)c2nsnc12 29. 1
+CCOCN(C(C)=O)c1c(SC)c(N(C)C)c(Br)c2nsnc12 30. 1
+CCOCN(C(C)=O)c1c(SC)c(N(C)C)c(N(C)C)c2nsnc12 31. 0
+CCOCN(C(C)=O)c1c(SC)c(N(C)C)c([N+](=O)[O-])c2nsnc12 32. 2
+CCOCN(C(C)=O)c1c(SC)c(N(C)C)c(S(=O)(=O)N(C)C)c2nsnc12 33. 3
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C)c(C)c2nsnc12 34. 1
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C)c(C(F)(F)F)c2nsnc12 35. 2
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C)c(C#N)c2nsnc12 36. 2
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C)c(OC)c2nsnc12 37. 1
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C)c(OC(F)(F)F)c2nsnc12 38. 2
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C)c(SC)c2nsnc12 39. 1
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C)c(SC(F)(F)F)c2nsnc12 40. 2
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C)c(Br)c2nsnc12 41. 2
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C)c(N(C)C)c2nsnc12 42. 1
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C)c([N+](=O)[O-])c2nsnc12 43. 3
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C)c(S(=O)(=O)N(C)C)c2nsnc12 44. 3
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C(F)(F)F)c(C)c2nsnc12 45. 2
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C(F)(F)F)c(C(F)(F)F)c2nsnc12 46. 3
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C(F)(F)F)c(C#N)c2nsnc12 47. 2
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C(F)(F)F)c(OC)c2nsnc12 48. 2
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C(F)(F)F)c(OC(F)(F)F)c2nsnc12 49. 3
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C(F)(F)F)c(SC)c2nsnc12 50. 2
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C(F)(F)F)c(SC(F)(F)F)c2nsnc12 51. 3
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C(F)(F)F)c(Br)c2nsnc12 52. 2
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C(F)(F)F)c(N(C)C)c2nsnc12 53. 2
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C(F)(F)F)c([N+](=O)[O-])c2nsnc12 54. 4
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12 55. 4
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C#N)c(C)c2nsnc12 56. 2
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C#N)c(C(F)(F)F)c2nsnc12 57. 3
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C#N)c(C#N)c2nsnc12 58. 3
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C#N)c(OC)c2nsnc12 59. 2
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C#N)c(OC(F)(F)F)c2nsnc12 60. 3
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C#N)c(SC)c2nsnc12 61. 2
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C#N)c(SC(F)(F)F)c2nsnc12 62. 3
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C#N)c(Br)c2nsnc12 63. 3
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C#N)c(N(C)C)c2nsnc12 64. 2
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C#N)c([N+](=O)[O-])c2nsnc12 65. 4
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(C#N)c(S(=O)(=O)N(C)C)c2nsnc12 66. 4
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC)c(C)c2nsnc12 67. 1
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC)c(C(F)(F)F)c2nsnc12 68. 2
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC)c(C#N)c2nsnc12 69. 2
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC)c(OC)c2nsnc12 70. 1
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC)c(OC(F)(F)F)c2nsnc12 71. 2
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC)c(SC)c2nsnc12 72. 1
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC)c(SC(F)(F)F)c2nsnc12 73. 2
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC)c(Br)c2nsnc12 74. 2
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC)c(N(C)C)c2nsnc12 75. 1
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC)c([N+](=O)[O-])c2nsnc12 76. 3
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC)c(S(=O)(=O)N(C)C)c2nsnc12 77. 3
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC(F)(F)F)c(C)c2nsnc12 78. 2
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC(F)(F)F)c(C(F)(F)F)c2nsnc12 79. 3
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC(F)(F)F)c(C#N)c2nsnc12 80. 3
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC(F)(F)F)c(OC)c2nsnc12 81. 2
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC(F)(F)F)c(OC(F)(F)F)c2nsnc12 82. 3
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC(F)(F)F)c(SC)c2nsnc12 83. 2
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC(F)(F)F)c(SC(F)(F)F)c2nsnc12 84. 3
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC(F)(F)F)c(Br)c2nsnc12 85. 2
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC(F)(F)F)c(N(C)C)c2nsnc12 86. 2
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC(F)(F)F)c([N+](=O)[O-])c2nsnc12 87. 4
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(OC(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12 88. 4
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC)c(C)c2nsnc12 89. 1
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC)c(C(F)(F)F)c2nsnc12 90. 2
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC)c(C#N)c2nsnc12 91. 2
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC)c(OC)c2nsnc12 92. 1
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC)c(OC(F)(F)F)c2nsnc12 93. 2
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC)c(SC)c2nsnc12 94. 1
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC)c(SC(F)(F)F)c2nsnc12 95. 2
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC)c(Br)c2nsnc12 96. 2
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC)c(N(C)C)c2nsnc12 97. 1
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC)c([N+](=O)[O-])c2nsnc12 98. 3
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC)c(S(=O)(=O)N(C)C)c2nsnc12 99. 3
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC(F)(F)F)c(C)c2nsnc12 100. 2
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC(F)(F)F)c(C(F)(F)F)c2nsnc12 101. 3
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC(F)(F)F)c(C#N)c2nsnc12 102. 3
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC(F)(F)F)c(OC)c2nsnc12 103. 2
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC(F)(F)F)c(OC(F)(F)F)c2nsnc12 104. 3
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC(F)(F)F)c(SC)c2nsnc12 105. 3
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC(F)(F)F)c(SC(F)(F)F)c2nsnc12 106. 4
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC(F)(F)F)c(Br)c2nsnc12 107. 3
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC(F)(F)F)c(N(C)C)c2nsnc12 108. 3
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC(F)(F)F)c([N+](=O)[O-])c2nsnc12 109. 4
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(SC(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12 110. 4
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(N(C)C)c(C)c2nsnc12 111. 0
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(N(C)C)c(C(F)(F)F)c2nsnc12 112. 1
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(N(C)C)c(C#N)c2nsnc12 113. 1
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(N(C)C)c(OC)c2nsnc12 114. 0
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(N(C)C)c(OC(F)(F)F)c2nsnc12 115. 1
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(N(C)C)c(SC)c2nsnc12 116. 0
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(N(C)C)c(SC(F)(F)F)c2nsnc12 117. 1
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(N(C)C)c(Br)c2nsnc12 118. 1
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(N(C)C)c(N(C)C)c2nsnc12 119. 0
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(N(C)C)c([N+](=O)[O-])c2nsnc12 120. 2
+CCOCN(C(C)=O)c1c(SC(F)(F)F)c(N(C)C)c(S(=O)(=O)N(C)C)c2nsnc12 121. 3
+CCOCN(C(C)=O)c1c(N(C)C)c(C)c(C)c2nsnc12 122. 0
+CCOCN(C(C)=O)c1c(N(C)C)c(C)c(C(F)(F)F)c2nsnc12 123. 1
+CCOCN(C(C)=O)c1c(N(C)C)c(C)c(C#N)c2nsnc12 124. 1
+CCOCN(C(C)=O)c1c(N(C)C)c(C)c(OC)c2nsnc12 125. 0
+CCOCN(C(C)=O)c1c(N(C)C)c(C)c(OC(F)(F)F)c2nsnc12 126. 1
+CCOCN(C(C)=O)c1c(N(C)C)c(C)c(SC)c2nsnc12 127. 0
+CCOCN(C(C)=O)c1c(N(C)C)c(C)c(SC(F)(F)F)c2nsnc12 128. 1
+CCOCN(C(C)=O)c1c(N(C)C)c(C)c(Br)c2nsnc12 129. 1
+CCOCN(C(C)=O)c1c(N(C)C)c(C)c(N(C)C)c2nsnc12 130. 0
+CCOCN(C(C)=O)c1c(N(C)C)c(C)c([N+](=O)[O-])c2nsnc12 131. 2
+CCOCN(C(C)=O)c1c(N(C)C)c(C)c(S(=O)(=O)N(C)C)c2nsnc12 132. 3
+CCOCN(C(C)=O)c1c(N(C)C)c(C(F)(F)F)c(C)c2nsnc12 133. 1
+CCOCN(C(C)=O)c1c(N(C)C)c(C(F)(F)F)c(C(F)(F)F)c2nsnc12 134. 2
+CCOCN(C(C)=O)c1c(N(C)C)c(C(F)(F)F)c(C#N)c2nsnc12 135. 2
+CCOCN(C(C)=O)c1c(N(C)C)c(C(F)(F)F)c(OC)c2nsnc12 136. 1
+CCOCN(C(C)=O)c1c(N(C)C)c(C(F)(F)F)c(OC(F)(F)F)c2nsnc12 137. 2
+CCOCN(C(C)=O)c1c(N(C)C)c(C(F)(F)F)c(SC)c2nsnc12 138. 1
+CCOCN(C(C)=O)c1c(N(C)C)c(C(F)(F)F)c(SC(F)(F)F)c2nsnc12 139. 2
+CCOCN(C(C)=O)c1c(N(C)C)c(C(F)(F)F)c(Br)c2nsnc12 140. 2
+CCOCN(C(C)=O)c1c(N(C)C)c(C(F)(F)F)c(N(C)C)c2nsnc12 141. 1
+CCOCN(C(C)=O)c1c(N(C)C)c(C(F)(F)F)c([N+](=O)[O-])c2nsnc12 142. 3
+CCOCN(C(C)=O)c1c(N(C)C)c(C(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12 143. 3
+CCOCN(C(C)=O)c1c(N(C)C)c(C#N)c(C)c2nsnc12 144. 1
+CCOCN(C(C)=O)c1c(N(C)C)c(C#N)c(C(F)(F)F)c2nsnc12 145. 2
+CCOCN(C(C)=O)c1c(N(C)C)c(C#N)c(C#N)c2nsnc12 146. 2
+CCOCN(C(C)=O)c1c(N(C)C)c(C#N)c(OC)c2nsnc12 147. 1
+CCOCN(C(C)=O)c1c(N(C)C)c(C#N)c(OC(F)(F)F)c2nsnc12 148. 2
+CCOCN(C(C)=O)c1c(N(C)C)c(C#N)c(SC)c2nsnc12 149. 1
+CCOCN(C(C)=O)c1c(N(C)C)c(C#N)c(SC(F)(F)F)c2nsnc12 150. 2
+CCOCN(C(C)=O)c1c(N(C)C)c(C#N)c(Br)c2nsnc12 151. 2
+CCOCN(C(C)=O)c1c(N(C)C)c(C#N)c(N(C)C)c2nsnc12 152. 1
+CCOCN(C(C)=O)c1c(N(C)C)c(C#N)c([N+](=O)[O-])c2nsnc12 153. 3
+CCOCN(C(C)=O)c1c(N(C)C)c(C#N)c(S(=O)(=O)N(C)C)c2nsnc12 154. 3
+CCOCN(C(C)=O)c1c(N(C)C)c(OC)c(C)c2nsnc12 155. 0
+CCOCN(C(C)=O)c1c(N(C)C)c(OC)c(C(F)(F)F)c2nsnc12 156. 1
+CCOCN(C(C)=O)c1c(N(C)C)c(OC)c(C#N)c2nsnc12 157. 1
+CCOCN(C(C)=O)c1c(N(C)C)c(OC)c(OC)c2nsnc12 158. 0
+CCOCN(C(C)=O)c1c(N(C)C)c(OC)c(OC(F)(F)F)c2nsnc12 159. 1
+CCOCN(C(C)=O)c1c(N(C)C)c(OC)c(SC)c2nsnc12 160. 0
+CCOCN(C(C)=O)c1c(N(C)C)c(OC)c(SC(F)(F)F)c2nsnc12 161. 1
+CCOCN(C(C)=O)c1c(N(C)C)c(OC)c(Br)c2nsnc12 162. 1
+CCOCN(C(C)=O)c1c(N(C)C)c(OC)c(N(C)C)c2nsnc12 163. 0
+CCOCN(C(C)=O)c1c(N(C)C)c(OC)c([N+](=O)[O-])c2nsnc12 164. 2
+CCOCN(C(C)=O)c1c(N(C)C)c(OC)c(S(=O)(=O)N(C)C)c2nsnc12 165. 3
+CCOCN(C(C)=O)c1c(N(C)C)c(OC(F)(F)F)c(C)c2nsnc12 166. 1
+CCOCN(C(C)=O)c1c(N(C)C)c(OC(F)(F)F)c(C(F)(F)F)c2nsnc12 167. 2
+CCOCN(C(C)=O)c1c(N(C)C)c(OC(F)(F)F)c(C#N)c2nsnc12 168. 2
+CCOCN(C(C)=O)c1c(N(C)C)c(OC(F)(F)F)c(OC)c2nsnc12 169. 1
+CCOCN(C(C)=O)c1c(N(C)C)c(OC(F)(F)F)c(OC(F)(F)F)c2nsnc12 170. 2
+CCOCN(C(C)=O)c1c(N(C)C)c(OC(F)(F)F)c(SC)c2nsnc12 171. 1
+CCOCN(C(C)=O)c1c(N(C)C)c(OC(F)(F)F)c(SC(F)(F)F)c2nsnc12 172. 2
+CCOCN(C(C)=O)c1c(N(C)C)c(OC(F)(F)F)c(Br)c2nsnc12 173. 2
+CCOCN(C(C)=O)c1c(N(C)C)c(OC(F)(F)F)c(N(C)C)c2nsnc12 174. 1
+CCOCN(C(C)=O)c1c(N(C)C)c(OC(F)(F)F)c([N+](=O)[O-])c2nsnc12 175. 3
+CCOCN(C(C)=O)c1c(N(C)C)c(OC(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12 176. 3
+CCOCN(C(C)=O)c1c(N(C)C)c(SC)c(C)c2nsnc12 177. 0
+CCOCN(C(C)=O)c1c(N(C)C)c(SC)c(C(F)(F)F)c2nsnc12 178. 1
+CCOCN(C(C)=O)c1c(N(C)C)c(SC)c(C#N)c2nsnc12 179. 1
+CCOCN(C(C)=O)c1c(N(C)C)c(SC)c(OC)c2nsnc12 180. 0
+CCOCN(C(C)=O)c1c(N(C)C)c(SC)c(OC(F)(F)F)c2nsnc12 181. 1
+CCOCN(C(C)=O)c1c(N(C)C)c(SC)c(SC)c2nsnc12 182. 0
+CCOCN(C(C)=O)c1c(N(C)C)c(SC)c(SC(F)(F)F)c2nsnc12 183. 1
+CCOCN(C(C)=O)c1c(N(C)C)c(SC)c(Br)c2nsnc12 184. 1
+CCOCN(C(C)=O)c1c(N(C)C)c(SC)c(N(C)C)c2nsnc12 185. 0
+CCOCN(C(C)=O)c1c(N(C)C)c(SC)c([N+](=O)[O-])c2nsnc12 186. 2
+CCOCN(C(C)=O)c1c(N(C)C)c(SC)c(S(=O)(=O)N(C)C)c2nsnc12 187. 3
+CCOCN(C(C)=O)c1c(N(C)C)c(SC(F)(F)F)c(C)c2nsnc12 188. 1
+CCOCN(C(C)=O)c1c(N(C)C)c(SC(F)(F)F)c(C(F)(F)F)c2nsnc12 189. 2
+CCOCN(C(C)=O)c1c(N(C)C)c(SC(F)(F)F)c(C#N)c2nsnc12 190. 2
+CCOCN(C(C)=O)c1c(N(C)C)c(SC(F)(F)F)c(OC)c2nsnc12 191. 1
+CCOCN(C(C)=O)c1c(N(C)C)c(SC(F)(F)F)c(OC(F)(F)F)c2nsnc12 192. 2
+CCOCN(C(C)=O)c1c(N(C)C)c(SC(F)(F)F)c(SC)c2nsnc12 193. 1
+CCOCN(C(C)=O)c1c(N(C)C)c(SC(F)(F)F)c(SC(F)(F)F)c2nsnc12 194. 2
+CCOCN(C(C)=O)c1c(N(C)C)c(SC(F)(F)F)c(Br)c2nsnc12 195. 2
+CCOCN(C(C)=O)c1c(N(C)C)c(SC(F)(F)F)c(N(C)C)c2nsnc12 196. 1
+CCOCN(C(C)=O)c1c(N(C)C)c(SC(F)(F)F)c([N+](=O)[O-])c2nsnc12 197. 3
+CCOCN(C(C)=O)c1c(N(C)C)c(SC(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12 198. 3
+CCOCN(C(C)=O)c1c(N(C)C)c(N(C)C)c(C)c2nsnc12 199. 0
+CCOCN(C(C)=O)c1c(N(C)C)c(N(C)C)c(C(F)(F)F)c2nsnc12 200. 1
+You are a chemist, please use the molecules provided, group them into five clusters based on their redox potential (extremely low : 0, low: 1, medium: 2, high: 3, extremely high :4). Analyze the following features for each molecule: Number and type of electron-withdrawing groups (e.g., CF₃, NO₂, CN, halogens). Number and type of electron-donating groups (e.g., alkyl, methoxy, hydroxyl). Positioning of substituents on aromatic rings (meta, para, ortho). Presence of sulfur-containing functional groups (e.g., SCF₃, S=O). Degree of molecular polarity (based on F, O, or N atoms). Use these criteria to evaluate the redox potential qualitatively and cluster the molecules accordingly.**Respond strictly with the numerical cluster labels only. Do not include any additional text.**
+Now please cluster the following molecules:
+1. CCOCN(C(C)=O)c1c(N(C)C)c(N(C)C)c(C#N)c2nsnc12
+2. CCOCN(C(C)=O)c1c(N(C)C)c(N(C)C)c(OC)c2nsnc12
+3. CCOCN(C(C)=O)c1c(N(C)C)c(N(C)C)c(OC(F)(F)F)c2nsnc12
+4. CCOCN(C(C)=O)c1c(N(C)C)c(N(C)C)c(SC)c2nsnc12
+5. CCOCN(C(C)=O)c1c(N(C)C)c(N(C)C)c(SC(F)(F)F)c2nsnc12
+6. CCOCN(C(C)=O)c1c(N(C)C)c(N(C)C)c(Br)c2nsnc12
+7. CCOCN(C(C)=O)c1c(N(C)C)c(N(C)C)c(N(C)C)c2nsnc12
+8. CCOCN(C(C)=O)c1c(N(C)C)c(N(C)C)c([N+](=O)[O-])c2nsnc12
+9. CCOCN(C(C)=O)c1c(N(C)C)c(N(C)C)c(S(=O)(=O)N(C)C)c2nsnc12
+10. CC(=O)N(c1c(C)c(C)c(C)c2nsnc12)C(F)(F)C(F)(F)F
+11. CC(=O)N(c1c(C)c(C)c(C(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+12. CC(=O)N(c1c(C)c(C)c(C#N)c2nsnc12)C(F)(F)C(F)(F)F
+13. COc1c(C)c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+14. CC(=O)N(c1c(C)c(C)c(OC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+15. CSc1c(C)c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+16. CC(=O)N(c1c(C)c(C)c(SC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+17. CC(=O)N(c1c(C)c(C)c(Br)c2nsnc12)C(F)(F)C(F)(F)F
+18. CC(=O)N(c1c(C)c(C)c(N(C)C)c2nsnc12)C(F)(F)C(F)(F)F
+19. CC(=O)N(c1c(C)c(C)c([N+](=O)[O-])c2nsnc12)C(F)(F)C(F)(F)F
+20. CC(=O)N(c1c(C)c(C)c(S(=O)(=O)N(C)C)c2nsnc12)C(F)(F)C(F)(F)F
+21. CC(=O)N(c1c(C)c(C(F)(F)F)c(C)c2nsnc12)C(F)(F)C(F)(F)F
+22. CC(=O)N(c1c(C)c(C(F)(F)F)c(C(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+23. CC(=O)N(c1c(C)c(C(F)(F)F)c(C#N)c2nsnc12)C(F)(F)C(F)(F)F
+24. COc1c(C(F)(F)F)c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+25. CC(=O)N(c1c(C)c(C(F)(F)F)c(OC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+26. CSc1c(C(F)(F)F)c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+27. CC(=O)N(c1c(C)c(C(F)(F)F)c(SC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+28. CC(=O)N(c1c(C)c(C(F)(F)F)c(Br)c2nsnc12)C(F)(F)C(F)(F)F
+29. CC(=O)N(c1c(C)c(C(F)(F)F)c(N(C)C)c2nsnc12)C(F)(F)C(F)(F)F
+30. CC(=O)N(c1c(C)c(C(F)(F)F)c([N+](=O)[O-])c2nsnc12)C(F)(F)C(F)(F)F
+31. CC(=O)N(c1c(C)c(C(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12)C(F)(F)C(F)(F)F
+32. CC(=O)N(c1c(C)c(C#N)c(C)c2nsnc12)C(F)(F)C(F)(F)F
+33. CC(=O)N(c1c(C)c(C#N)c(C(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+34. CC(=O)N(c1c(C)c(C#N)c(C#N)c2nsnc12)C(F)(F)C(F)(F)F
+35. COc1c(C#N)c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+36. CC(=O)N(c1c(C)c(C#N)c(OC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+37. CSc1c(C#N)c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+38. CC(=O)N(c1c(C)c(C#N)c(SC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+39. CC(=O)N(c1c(C)c(C#N)c(Br)c2nsnc12)C(F)(F)C(F)(F)F
+40. CC(=O)N(c1c(C)c(C#N)c(N(C)C)c2nsnc12)C(F)(F)C(F)(F)F
+41. CC(=O)N(c1c(C)c(C#N)c([N+](=O)[O-])c2nsnc12)C(F)(F)C(F)(F)F
+42. CC(=O)N(c1c(C)c(C#N)c(S(=O)(=O)N(C)C)c2nsnc12)C(F)(F)C(F)(F)F
+43. COc1c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1C
+44. COc1c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1C(F)(F)F
+45. COc1c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1C#N
+46. COc1c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1OC
+47. COc1c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1OC(F)(F)F
+48. COc1c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1SC
+49. COc1c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1SC(F)(F)F
+50. CC(=O)N(c1c(C)c(N(C)C)c(N(C)C)c2nsnc12)C(F)(F)C(F)(F)F
+51. CC(=O)N(c1c(C)c(N(C)C)c([N+](=O)[O-])c2nsnc12)C(F)(F)C(F)(F)F
+52. CC(=O)N(c1c(C)c(N(C)C)c(S(=O)(=O)N(C)C)c2nsnc12)C(F)(F)C(F)(F)F
+53. CC(=O)N(c1c(C(F)(F)F)c(C)c(C)c2nsnc12)C(F)(F)C(F)(F)F
+54. CC(=O)N(c1c(C(F)(F)F)c(C)c(C(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+55. CC(=O)N(c1c(C(F)(F)F)c(C)c(C#N)c2nsnc12)C(F)(F)C(F)(F)F
+56. COc1c(C)c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+57. CC(=O)N(c1c(C(F)(F)F)c(C)c(OC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+58. CSc1c(C)c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+59. CC(=O)N(c1c(C(F)(F)F)c(C)c(SC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+60. CC(=O)N(c1c(C(F)(F)F)c(C)c(Br)c2nsnc12)C(F)(F)C(F)(F)F
+61. CC(=O)N(c1c(C(F)(F)F)c(C)c(N(C)C)c2nsnc12)C(F)(F)C(F)(F)F
+62. CC(=O)N(c1c(C(F)(F)F)c(C)c([N+](=O)[O-])c2nsnc12)C(F)(F)C(F)(F)F
+63. CC(=O)N(c1c(C(F)(F)F)c(C)c(S(=O)(=O)N(C)C)c2nsnc12)C(F)(F)C(F)(F)F
+64. CC(=O)N(c1c(C(F)(F)F)c(C(F)(F)F)c(C)c2nsnc12)C(F)(F)C(F)(F)F
+65. CC(=O)N(c1c(C(F)(F)F)c(C(F)(F)F)c(C(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+66. CC(=O)N(c1c(C(F)(F)F)c(C(F)(F)F)c(C#N)c2nsnc12)C(F)(F)C(F)(F)F
+67. COc1c(C(F)(F)F)c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+68. CC(=O)N(c1c(C(F)(F)F)c(C(F)(F)F)c(OC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+69. CSc1c(C(F)(F)F)c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+70. CC(=O)N(c1c(C(F)(F)F)c(C(F)(F)F)c(SC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+71. CC(=O)N(c1c(C(F)(F)F)c(C(F)(F)F)c(Br)c2nsnc12)C(F)(F)C(F)(F)F
+72. CC(=O)N(c1c(C(F)(F)F)c(C(F)(F)F)c(N(C)C)c2nsnc12)C(F)(F)C(F)(F)F
+73. CC(=O)N(c1c(C(F)(F)F)c(C(F)(F)F)c([N+](=O)[O-])c2nsnc12)C(F)(F)C(F)(F)F
+74. CC(=O)N(c1c(C(F)(F)F)c(C(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12)C(F)(F)C(F)(F)F
+75. CC(=O)N(c1c(C(F)(F)F)c(C#N)c(C)c2nsnc12)C(F)(F)C(F)(F)F
+76. CC(=O)N(c1c(C(F)(F)F)c(C#N)c(C(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+77. CC(=O)N(c1c(C(F)(F)F)c(C#N)c(C#N)c2nsnc12)C(F)(F)C(F)(F)F
+78. COc1c(C#N)c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+79. CC(=O)N(c1c(C(F)(F)F)c(C#N)c(OC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+80. CSc1c(C#N)c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+81. CC(=O)N(c1c(C(F)(F)F)c(C#N)c(SC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+82. CC(=O)N(c1c(C(F)(F)F)c(C#N)c(Br)c2nsnc12)C(F)(F)C(F)(F)F
+83. CC(=O)N(c1c(C(F)(F)F)c(C#N)c(N(C)C)c2nsnc12)C(F)(F)C(F)(F)F
+84. CC(=O)N(c1c(C(F)(F)F)c(C#N)c([N+](=O)[O-])c2nsnc12)C(F)(F)C(F)(F)F
+85. CC(=O)N(c1c(C(F)(F)F)c(C#N)c(S(=O)(=O)N(C)C)c2nsnc12)C(F)(F)C(F)(F)F
+86. COc1c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1C
+87. COc1c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1C(F)(F)F
+88. COc1c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1C#N
+89. COc1c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1OC
+90. COc1c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1OC(F)(F)F
+91. COc1c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1SC
+92. COc1c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1SC(F)(F)F
+93. COc1c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1Br
+94. COc1c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1N(C)C
+95. COc1c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1Br
+96. COc1c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1N(C)C
+97. COc1c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1[N+](=O)[O-]
+98. COc1c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1S(=O)(=O)N(C)C
+99. CC(=O)N(c1c(C)c(OC(F)(F)F)c(C)c2nsnc12)C(F)(F)C(F)(F)F
+100. CC(=O)N(c1c(C)c(OC(F)(F)F)c(C(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+101. CC(=O)N(c1c(C)c(OC(F)(F)F)c(C#N)c2nsnc12)C(F)(F)C(F)(F)F
+102. COc1c(OC(F)(F)F)c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+103. CC(=O)N(c1c(C)c(OC(F)(F)F)c(OC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+104. CSc1c(OC(F)(F)F)c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+105. CC(=O)N(c1c(C)c(OC(F)(F)F)c(SC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+106. CC(=O)N(c1c(C)c(OC(F)(F)F)c(Br)c2nsnc12)C(F)(F)C(F)(F)F
+107. CC(=O)N(c1c(C)c(OC(F)(F)F)c(N(C)C)c2nsnc12)C(F)(F)C(F)(F)F
+108. CC(=O)N(c1c(C)c(OC(F)(F)F)c([N+](=O)[O-])c2nsnc12)C(F)(F)C(F)(F)F
+109. CC(=O)N(c1c(C)c(OC(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12)C(F)(F)C(F)(F)F
+110. CSc1c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1C
+111. CSc1c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1C(F)(F)F
+112. CSc1c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1C#N
+113. COc1c(SC)c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+114. CSc1c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1OC(F)(F)F
+115. CSc1c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1SC
+116. CSc1c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1SC(F)(F)F
+117. CSc1c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1Br
+118. CSc1c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1N(C)C
+119. CSc1c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1[N+](=O)[O-]
+120. CSc1c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1S(=O)(=O)N(C)C
+121. CC(=O)N(c1c(C)c(SC(F)(F)F)c(C)c2nsnc12)C(F)(F)C(F)(F)F
+122. CC(=O)N(c1c(C)c(SC(F)(F)F)c(C(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+123. CC(=O)N(c1c(C)c(SC(F)(F)F)c(C#N)c2nsnc12)C(F)(F)C(F)(F)F
+124. COc1c(SC(F)(F)F)c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+125. CC(=O)N(c1c(C)c(SC(F)(F)F)c(OC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+126. CSc1c(SC(F)(F)F)c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+127. CC(=O)N(c1c(C)c(SC(F)(F)F)c(SC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+128. CC(=O)N(c1c(C)c(SC(F)(F)F)c(Br)c2nsnc12)C(F)(F)C(F)(F)F
+129. CC(=O)N(c1c(C)c(SC(F)(F)F)c(N(C)C)c2nsnc12)C(F)(F)C(F)(F)F
+130. CC(=O)N(c1c(C)c(SC(F)(F)F)c([N+](=O)[O-])c2nsnc12)C(F)(F)C(F)(F)F
+131. CC(=O)N(c1c(C)c(SC(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12)C(F)(F)C(F)(F)F
+132. CC(=O)N(c1c(C)c(N(C)C)c(C)c2nsnc12)C(F)(F)C(F)(F)F
+133. CC(=O)N(c1c(C)c(N(C)C)c(C(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+134. CC(=O)N(c1c(C)c(N(C)C)c(C#N)c2nsnc12)C(F)(F)C(F)(F)F
+135. COc1c(N(C)C)c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+136. CC(=O)N(c1c(C)c(N(C)C)c(OC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+137. CSc1c(N(C)C)c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+138. CC(=O)N(c1c(C)c(N(C)C)c(SC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+139. CC(=O)N(c1c(C)c(N(C)C)c(Br)c2nsnc12)C(F)(F)C(F)(F)F
+140. COc1c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1[N+](=O)[O-]
+141. COc1c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1S(=O)(=O)N(C)C
+142. CC(=O)N(c1c(C(F)(F)F)c(OC(F)(F)F)c(C)c2nsnc12)C(F)(F)C(F)(F)F
+143. CC(=O)N(c1c(C(F)(F)F)c(OC(F)(F)F)c(C(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+144. CC(=O)N(c1c(C(F)(F)F)c(OC(F)(F)F)c(C#N)c2nsnc12)C(F)(F)C(F)(F)F
+145. COc1c(OC(F)(F)F)c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+146. CC(=O)N(c1c(C(F)(F)F)c(OC(F)(F)F)c(OC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+147. CSc1c(OC(F)(F)F)c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+148. CC(=O)N(c1c(C(F)(F)F)c(OC(F)(F)F)c(SC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+149. CC(=O)N(c1c(C(F)(F)F)c(OC(F)(F)F)c(Br)c2nsnc12)C(F)(F)C(F)(F)F
+150. CC(=O)N(c1c(C(F)(F)F)c(OC(F)(F)F)c(N(C)C)c2nsnc12)C(F)(F)C(F)(F)F
+151. CC(=O)N(c1c(C(F)(F)F)c(OC(F)(F)F)c([N+](=O)[O-])c2nsnc12)C(F)(F)C(F)(F)F
+152. CC(=O)N(c1c(C(F)(F)F)c(OC(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12)C(F)(F)C(F)(F)F
+153. CSc1c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1C
+154. CSc1c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1C(F)(F)F
+155. CSc1c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1C#N
+156. COc1c(SC)c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+157. CSc1c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1OC(F)(F)F
+158. CSc1c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1SC
+159. CSc1c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1SC(F)(F)F
+160. CSc1c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1Br
+161. CSc1c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1N(C)C
+162. CSc1c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1[N+](=O)[O-]
+163. CSc1c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1S(=O)(=O)N(C)C
+164. CC(=O)N(c1c(C(F)(F)F)c(SC(F)(F)F)c(C)c2nsnc12)C(F)(F)C(F)(F)F
+165. CC(=O)N(c1c(C(F)(F)F)c(SC(F)(F)F)c(C(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+166. CC(=O)N(c1c(C(F)(F)F)c(SC(F)(F)F)c(C#N)c2nsnc12)C(F)(F)C(F)(F)F
+167. COc1c(SC(F)(F)F)c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+168. CC(=O)N(c1c(C(F)(F)F)c(SC(F)(F)F)c(OC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+169. CSc1c(SC(F)(F)F)c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+170. CC(=O)N(c1c(C(F)(F)F)c(SC(F)(F)F)c(SC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+171. CC(=O)N(c1c(C(F)(F)F)c(SC(F)(F)F)c(Br)c2nsnc12)C(F)(F)C(F)(F)F
+172. CC(=O)N(c1c(C(F)(F)F)c(SC(F)(F)F)c(N(C)C)c2nsnc12)C(F)(F)C(F)(F)F
+173. CC(=O)N(c1c(C(F)(F)F)c(SC(F)(F)F)c([N+](=O)[O-])c2nsnc12)C(F)(F)C(F)(F)F
+174. CC(=O)N(c1c(C(F)(F)F)c(SC(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12)C(F)(F)C(F)(F)F
+175. CC(=O)N(c1c(C(F)(F)F)c(N(C)C)c(C)c2nsnc12)C(F)(F)C(F)(F)F
+176. CC(=O)N(c1c(C(F)(F)F)c(N(C)C)c(C(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+177. CC(=O)N(c1c(C(F)(F)F)c(N(C)C)c(C#N)c2nsnc12)C(F)(F)C(F)(F)F
+178. COc1c(N(C)C)c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+179. CC(=O)N(c1c(C(F)(F)F)c(N(C)C)c(OC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+180. CSc1c(N(C)C)c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+181. CC(=O)N(c1c(C(F)(F)F)c(N(C)C)c(SC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+182. CC(=O)N(c1c(C(F)(F)F)c(N(C)C)c(Br)c2nsnc12)C(F)(F)C(F)(F)F
+183. CC(=O)N(c1c(C(F)(F)F)c(N(C)C)c(N(C)C)c2nsnc12)C(F)(F)C(F)(F)F
+184. CC(=O)N(c1c(C(F)(F)F)c(N(C)C)c([N+](=O)[O-])c2nsnc12)C(F)(F)C(F)(F)F
+185. CC(=O)N(c1c(C(F)(F)F)c(N(C)C)c(S(=O)(=O)N(C)C)c2nsnc12)C(F)(F)C(F)(F)F
+186. CC(=O)N(c1c(C#N)c(C)c(C)c2nsnc12)C(F)(F)C(F)(F)F
+187. CC(=O)N(c1c(C#N)c(C)c(C(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+188. CC(=O)N(c1c(C#N)c(C)c(C#N)c2nsnc12)C(F)(F)C(F)(F)F
+189. COc1c(C)c(C#N)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+190. CC(=O)N(c1c(C#N)c(C)c(OC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+191. CSc1c(C)c(C#N)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+192. CC(=O)N(c1c(C#N)c(C)c(SC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+193. CC(=O)N(c1c(C#N)c(C)c(Br)c2nsnc12)C(F)(F)C(F)(F)F
+194. CC(=O)N(c1c(C#N)c(C)c(N(C)C)c2nsnc12)C(F)(F)C(F)(F)F
+195. CC(=O)N(c1c(C#N)c(C)c([N+](=O)[O-])c2nsnc12)C(F)(F)C(F)(F)F
+196. CC(=O)N(c1c(C#N)c(C)c(S(=O)(=O)N(C)C)c2nsnc12)C(F)(F)C(F)(F)F
+197. CC(=O)N(c1c(C#N)c(C(F)(F)F)c(C)c2nsnc12)C(F)(F)C(F)(F)F
+198. CC(=O)N(c1c(C#N)c(C(F)(F)F)c(C(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+199. CC(=O)N(c1c(C#N)c(C(F)(F)F)c(C#N)c2nsnc12)C(F)(F)C(F)(F)F
+200. COc1c(C(F)(F)F)c(C#N)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+
+1. 1
+2. 0
+3. 1
+4. 1
+5. 2
+6. 1
+7. 0
+8. 2
+9. 3
+10. 1
+11. 2
+12. 2
+13. 2
+14. 2
+15. 2
+16. 2
+17. 2
+18. 1
+19. 3
+20. 4
+21. 2
+22. 3
+23. 3
+24. 3
+25. 3
+26. 3
+27. 3
+28. 3
+29. 2
+30. 4
+31. 4
+32. 2
+33. 3
+34. 3
+35. 3
+36. 3
+37. 3
+38. 3
+39. 3
+40. 2
+41. 4
+42. 4
+43. 2
+44. 3
+45. 3
+46. 3
+47. 3
+48. 3
+49. 3
+50. 1
+51. 3
+52. 4
+53. 1
+54. 2
+55. 2
+56. 2
+57. 2
+58. 2
+59. 2
+60. 2
+61. 1
+62. 3
+63. 4
+64. 2
+65. 3
+66. 3
+67. 3
+68. 3
+69. 3
+70. 3
+71. 3
+72. 2
+73. 4
+74. 4
+75. 2
+76. 3
+77. 3
+78. 3
+79. 3
+80. 3
+81. 3
+82. 3
+83. 2
+84. 4
+85. 4
+86. 2
+87. 3
+88. 3
+89. 3
+90. 3
+91. 3
+92. 3
+93. 3
+94. 2
+95. 2
+96. 2
+97. 3
+98. 4
+99. 2
+100. 2
+101. 2
+102. 2
+103. 3
+104. 3
+105. 3
+106. 3
+107. 2
+108. 4
+109. 4
+110. 2
+111. 3
+112. 3
+113. 2
+114. 3
+115. 3
+116. 3
+117. 3
+118. 2
+119. 3
+120. 4
+121. 2
+122. 3
+123. 3
+124. 3
+125. 3
+126. 3
+127. 3
+128. 3
+129. 2
+130. 4
+131. 4
+132. 1
+133. 2
+134. 2
+135. 2
+136. 2
+137. 2
+138. 2
+139. 2
+140. 3
+141. 4
+142. 2
+143. 3
+144. 3
+145. 3
+146. 3
+147. 3
+148. 3
+149. 3
+150. 2
+151. 4
+152. 4
+153. 2
+154. 3
+155. 3
+156. 2
+157. 3
+158. 3
+159. 3
+160. 3
+161. 2
+162. 3
+163. 4
+164. 2
+165. 3
+166. 3
+167. 3
+168. 3
+169. 3
+170. 3
+171. 3
+172. 2
+173. 4
+174. 4
+175. 2
+176. 3
+177. 3
+178. 3
+179. 3
+180. 3
+181. 3
+182. 3
+183. 2
+184. 4
+185. 4
+186. 2
+187. 2
+188. 2
+189. 2
+190. 2
+191. 2
+192. 2
+193. 2
+194. 1
+195. 3
+196. 4
+197. 2
+198. 3
+199. 3
+200. 3
+CCOCN(C(C)=O)c1c(N(C)C)c(N(C)C)c(C#N)c2nsnc12 1. 1
+CCOCN(C(C)=O)c1c(N(C)C)c(N(C)C)c(OC)c2nsnc12 2. 0
+CCOCN(C(C)=O)c1c(N(C)C)c(N(C)C)c(OC(F)(F)F)c2nsnc12 3. 1
+CCOCN(C(C)=O)c1c(N(C)C)c(N(C)C)c(SC)c2nsnc12 4. 1
+CCOCN(C(C)=O)c1c(N(C)C)c(N(C)C)c(SC(F)(F)F)c2nsnc12 5. 2
+CCOCN(C(C)=O)c1c(N(C)C)c(N(C)C)c(Br)c2nsnc12 6. 1
+CCOCN(C(C)=O)c1c(N(C)C)c(N(C)C)c(N(C)C)c2nsnc12 7. 0
+CCOCN(C(C)=O)c1c(N(C)C)c(N(C)C)c([N+](=O)[O-])c2nsnc12 8. 2
+CCOCN(C(C)=O)c1c(N(C)C)c(N(C)C)c(S(=O)(=O)N(C)C)c2nsnc12 9. 3
+CC(=O)N(c1c(C)c(C)c(C)c2nsnc12)C(F)(F)C(F)(F)F 10. 1
+CC(=O)N(c1c(C)c(C)c(C(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F 11. 2
+CC(=O)N(c1c(C)c(C)c(C#N)c2nsnc12)C(F)(F)C(F)(F)F 12. 2
+COc1c(C)c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12 13. 2
+CC(=O)N(c1c(C)c(C)c(OC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F 14. 2
+CSc1c(C)c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12 15. 2
+CC(=O)N(c1c(C)c(C)c(SC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F 16. 2
+CC(=O)N(c1c(C)c(C)c(Br)c2nsnc12)C(F)(F)C(F)(F)F 17. 2
+CC(=O)N(c1c(C)c(C)c(N(C)C)c2nsnc12)C(F)(F)C(F)(F)F 18. 1
+CC(=O)N(c1c(C)c(C)c([N+](=O)[O-])c2nsnc12)C(F)(F)C(F)(F)F 19. 3
+CC(=O)N(c1c(C)c(C)c(S(=O)(=O)N(C)C)c2nsnc12)C(F)(F)C(F)(F)F 20. 4
+CC(=O)N(c1c(C)c(C(F)(F)F)c(C)c2nsnc12)C(F)(F)C(F)(F)F 21. 2
+CC(=O)N(c1c(C)c(C(F)(F)F)c(C(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F 22. 3
+CC(=O)N(c1c(C)c(C(F)(F)F)c(C#N)c2nsnc12)C(F)(F)C(F)(F)F 23. 3
+COc1c(C(F)(F)F)c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12 24. 3
+CC(=O)N(c1c(C)c(C(F)(F)F)c(OC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F 25. 3
+CSc1c(C(F)(F)F)c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12 26. 3
+CC(=O)N(c1c(C)c(C(F)(F)F)c(SC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F 27. 3
+CC(=O)N(c1c(C)c(C(F)(F)F)c(Br)c2nsnc12)C(F)(F)C(F)(F)F 28. 3
+CC(=O)N(c1c(C)c(C(F)(F)F)c(N(C)C)c2nsnc12)C(F)(F)C(F)(F)F 29. 2
+CC(=O)N(c1c(C)c(C(F)(F)F)c([N+](=O)[O-])c2nsnc12)C(F)(F)C(F)(F)F 30. 4
+CC(=O)N(c1c(C)c(C(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12)C(F)(F)C(F)(F)F 31. 4
+CC(=O)N(c1c(C)c(C#N)c(C)c2nsnc12)C(F)(F)C(F)(F)F 32. 2
+CC(=O)N(c1c(C)c(C#N)c(C(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F 33. 3
+CC(=O)N(c1c(C)c(C#N)c(C#N)c2nsnc12)C(F)(F)C(F)(F)F 34. 3
+COc1c(C#N)c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12 35. 3
+CC(=O)N(c1c(C)c(C#N)c(OC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F 36. 3
+CSc1c(C#N)c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12 37. 3
+CC(=O)N(c1c(C)c(C#N)c(SC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F 38. 3
+CC(=O)N(c1c(C)c(C#N)c(Br)c2nsnc12)C(F)(F)C(F)(F)F 39. 3
+CC(=O)N(c1c(C)c(C#N)c(N(C)C)c2nsnc12)C(F)(F)C(F)(F)F 40. 2
+CC(=O)N(c1c(C)c(C#N)c([N+](=O)[O-])c2nsnc12)C(F)(F)C(F)(F)F 41. 4
+CC(=O)N(c1c(C)c(C#N)c(S(=O)(=O)N(C)C)c2nsnc12)C(F)(F)C(F)(F)F 42. 4
+COc1c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1C 43. 2
+COc1c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1C(F)(F)F 44. 3
+COc1c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1C#N 45. 3
+COc1c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1OC 46. 3
+COc1c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1OC(F)(F)F 47. 3
+COc1c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1SC 48. 3
+COc1c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1SC(F)(F)F 49. 3
+CC(=O)N(c1c(C)c(N(C)C)c(N(C)C)c2nsnc12)C(F)(F)C(F)(F)F 50. 1
+CC(=O)N(c1c(C)c(N(C)C)c([N+](=O)[O-])c2nsnc12)C(F)(F)C(F)(F)F 51. 3
+CC(=O)N(c1c(C)c(N(C)C)c(S(=O)(=O)N(C)C)c2nsnc12)C(F)(F)C(F)(F)F 52. 4
+CC(=O)N(c1c(C(F)(F)F)c(C)c(C)c2nsnc12)C(F)(F)C(F)(F)F 53. 1
+CC(=O)N(c1c(C(F)(F)F)c(C)c(C(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F 54. 2
+CC(=O)N(c1c(C(F)(F)F)c(C)c(C#N)c2nsnc12)C(F)(F)C(F)(F)F 55. 2
+COc1c(C)c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12 56. 2
+CC(=O)N(c1c(C(F)(F)F)c(C)c(OC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F 57. 2
+CSc1c(C)c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12 58. 2
+CC(=O)N(c1c(C(F)(F)F)c(C)c(SC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F 59. 2
+CC(=O)N(c1c(C(F)(F)F)c(C)c(Br)c2nsnc12)C(F)(F)C(F)(F)F 60. 2
+CC(=O)N(c1c(C(F)(F)F)c(C)c(N(C)C)c2nsnc12)C(F)(F)C(F)(F)F 61. 1
+CC(=O)N(c1c(C(F)(F)F)c(C)c([N+](=O)[O-])c2nsnc12)C(F)(F)C(F)(F)F 62. 3
+CC(=O)N(c1c(C(F)(F)F)c(C)c(S(=O)(=O)N(C)C)c2nsnc12)C(F)(F)C(F)(F)F 63. 4
+CC(=O)N(c1c(C(F)(F)F)c(C(F)(F)F)c(C)c2nsnc12)C(F)(F)C(F)(F)F 64. 2
+CC(=O)N(c1c(C(F)(F)F)c(C(F)(F)F)c(C(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F 65. 3
+CC(=O)N(c1c(C(F)(F)F)c(C(F)(F)F)c(C#N)c2nsnc12)C(F)(F)C(F)(F)F 66. 3
+COc1c(C(F)(F)F)c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12 67. 3
+CC(=O)N(c1c(C(F)(F)F)c(C(F)(F)F)c(OC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F 68. 3
+CSc1c(C(F)(F)F)c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12 69. 3
+CC(=O)N(c1c(C(F)(F)F)c(C(F)(F)F)c(SC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F 70. 3
+CC(=O)N(c1c(C(F)(F)F)c(C(F)(F)F)c(Br)c2nsnc12)C(F)(F)C(F)(F)F 71. 3
+CC(=O)N(c1c(C(F)(F)F)c(C(F)(F)F)c(N(C)C)c2nsnc12)C(F)(F)C(F)(F)F 72. 2
+CC(=O)N(c1c(C(F)(F)F)c(C(F)(F)F)c([N+](=O)[O-])c2nsnc12)C(F)(F)C(F)(F)F 73. 4
+CC(=O)N(c1c(C(F)(F)F)c(C(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12)C(F)(F)C(F)(F)F 74. 4
+CC(=O)N(c1c(C(F)(F)F)c(C#N)c(C)c2nsnc12)C(F)(F)C(F)(F)F 75. 2
+CC(=O)N(c1c(C(F)(F)F)c(C#N)c(C(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F 76. 3
+CC(=O)N(c1c(C(F)(F)F)c(C#N)c(C#N)c2nsnc12)C(F)(F)C(F)(F)F 77. 3
+COc1c(C#N)c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12 78. 3
+CC(=O)N(c1c(C(F)(F)F)c(C#N)c(OC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F 79. 3
+CSc1c(C#N)c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12 80. 3
+CC(=O)N(c1c(C(F)(F)F)c(C#N)c(SC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F 81. 3
+CC(=O)N(c1c(C(F)(F)F)c(C#N)c(Br)c2nsnc12)C(F)(F)C(F)(F)F 82. 3
+CC(=O)N(c1c(C(F)(F)F)c(C#N)c(N(C)C)c2nsnc12)C(F)(F)C(F)(F)F 83. 2
+CC(=O)N(c1c(C(F)(F)F)c(C#N)c([N+](=O)[O-])c2nsnc12)C(F)(F)C(F)(F)F 84. 4
+CC(=O)N(c1c(C(F)(F)F)c(C#N)c(S(=O)(=O)N(C)C)c2nsnc12)C(F)(F)C(F)(F)F 85. 4
+COc1c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1C 86. 2
+COc1c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1C(F)(F)F 87. 3
+COc1c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1C#N 88. 3
+COc1c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1OC 89. 3
+COc1c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1OC(F)(F)F 90. 3
+COc1c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1SC 91. 3
+COc1c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1SC(F)(F)F 92. 3
+COc1c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1Br 93. 3
+COc1c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1N(C)C 94. 2
+COc1c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1Br 95. 2
+COc1c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1N(C)C 96. 2
+COc1c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1[N+](=O)[O-] 97. 3
+COc1c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1S(=O)(=O)N(C)C 98. 4
+CC(=O)N(c1c(C)c(OC(F)(F)F)c(C)c2nsnc12)C(F)(F)C(F)(F)F 99. 2
+CC(=O)N(c1c(C)c(OC(F)(F)F)c(C(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F 100. 2
+CC(=O)N(c1c(C)c(OC(F)(F)F)c(C#N)c2nsnc12)C(F)(F)C(F)(F)F 101. 2
+COc1c(OC(F)(F)F)c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12 102. 2
+CC(=O)N(c1c(C)c(OC(F)(F)F)c(OC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F 103. 3
+CSc1c(OC(F)(F)F)c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12 104. 3
+CC(=O)N(c1c(C)c(OC(F)(F)F)c(SC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F 105. 3
+CC(=O)N(c1c(C)c(OC(F)(F)F)c(Br)c2nsnc12)C(F)(F)C(F)(F)F 106. 3
+CC(=O)N(c1c(C)c(OC(F)(F)F)c(N(C)C)c2nsnc12)C(F)(F)C(F)(F)F 107. 2
+CC(=O)N(c1c(C)c(OC(F)(F)F)c([N+](=O)[O-])c2nsnc12)C(F)(F)C(F)(F)F 108. 4
+CC(=O)N(c1c(C)c(OC(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12)C(F)(F)C(F)(F)F 109. 4
+CSc1c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1C 110. 2
+CSc1c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1C(F)(F)F 111. 3
+CSc1c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1C#N 112. 3
+COc1c(SC)c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12 113. 2
+CSc1c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1OC(F)(F)F 114. 3
+CSc1c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1SC 115. 3
+CSc1c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1SC(F)(F)F 116. 3
+CSc1c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1Br 117. 3
+CSc1c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1N(C)C 118. 2
+CSc1c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1[N+](=O)[O-] 119. 3
+CSc1c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1S(=O)(=O)N(C)C 120. 4
+CC(=O)N(c1c(C)c(SC(F)(F)F)c(C)c2nsnc12)C(F)(F)C(F)(F)F 121. 2
+CC(=O)N(c1c(C)c(SC(F)(F)F)c(C(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F 122. 3
+CC(=O)N(c1c(C)c(SC(F)(F)F)c(C#N)c2nsnc12)C(F)(F)C(F)(F)F 123. 3
+COc1c(SC(F)(F)F)c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12 124. 3
+CC(=O)N(c1c(C)c(SC(F)(F)F)c(OC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F 125. 3
+CSc1c(SC(F)(F)F)c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12 126. 3
+CC(=O)N(c1c(C)c(SC(F)(F)F)c(SC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F 127. 3
+CC(=O)N(c1c(C)c(SC(F)(F)F)c(Br)c2nsnc12)C(F)(F)C(F)(F)F 128. 3
+CC(=O)N(c1c(C)c(SC(F)(F)F)c(N(C)C)c2nsnc12)C(F)(F)C(F)(F)F 129. 2
+CC(=O)N(c1c(C)c(SC(F)(F)F)c([N+](=O)[O-])c2nsnc12)C(F)(F)C(F)(F)F 130. 4
+CC(=O)N(c1c(C)c(SC(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12)C(F)(F)C(F)(F)F 131. 4
+CC(=O)N(c1c(C)c(N(C)C)c(C)c2nsnc12)C(F)(F)C(F)(F)F 132. 1
+CC(=O)N(c1c(C)c(N(C)C)c(C(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F 133. 2
+CC(=O)N(c1c(C)c(N(C)C)c(C#N)c2nsnc12)C(F)(F)C(F)(F)F 134. 2
+COc1c(N(C)C)c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12 135. 2
+CC(=O)N(c1c(C)c(N(C)C)c(OC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F 136. 2
+CSc1c(N(C)C)c(C)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12 137. 2
+CC(=O)N(c1c(C)c(N(C)C)c(SC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F 138. 2
+CC(=O)N(c1c(C)c(N(C)C)c(Br)c2nsnc12)C(F)(F)C(F)(F)F 139. 2
+COc1c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1[N+](=O)[O-] 140. 3
+COc1c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1S(=O)(=O)N(C)C 141. 4
+CC(=O)N(c1c(C(F)(F)F)c(OC(F)(F)F)c(C)c2nsnc12)C(F)(F)C(F)(F)F 142. 2
+CC(=O)N(c1c(C(F)(F)F)c(OC(F)(F)F)c(C(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F 143. 3
+CC(=O)N(c1c(C(F)(F)F)c(OC(F)(F)F)c(C#N)c2nsnc12)C(F)(F)C(F)(F)F 144. 3
+COc1c(OC(F)(F)F)c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12 145. 3
+CC(=O)N(c1c(C(F)(F)F)c(OC(F)(F)F)c(OC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F 146. 3
+CSc1c(OC(F)(F)F)c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12 147. 3
+CC(=O)N(c1c(C(F)(F)F)c(OC(F)(F)F)c(SC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F 148. 3
+CC(=O)N(c1c(C(F)(F)F)c(OC(F)(F)F)c(Br)c2nsnc12)C(F)(F)C(F)(F)F 149. 3
+CC(=O)N(c1c(C(F)(F)F)c(OC(F)(F)F)c(N(C)C)c2nsnc12)C(F)(F)C(F)(F)F 150. 2
+CC(=O)N(c1c(C(F)(F)F)c(OC(F)(F)F)c([N+](=O)[O-])c2nsnc12)C(F)(F)C(F)(F)F 151. 4
+CC(=O)N(c1c(C(F)(F)F)c(OC(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12)C(F)(F)C(F)(F)F 152. 4
+CSc1c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1C 153. 2
+CSc1c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1C(F)(F)F 154. 3
+CSc1c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1C#N 155. 3
+COc1c(SC)c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12 156. 2
+CSc1c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1OC(F)(F)F 157. 3
+CSc1c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1SC 158. 3
+CSc1c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1SC(F)(F)F 159. 3
+CSc1c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1Br 160. 3
+CSc1c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1N(C)C 161. 2
+CSc1c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1[N+](=O)[O-] 162. 3
+CSc1c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1S(=O)(=O)N(C)C 163. 4
+CC(=O)N(c1c(C(F)(F)F)c(SC(F)(F)F)c(C)c2nsnc12)C(F)(F)C(F)(F)F 164. 2
+CC(=O)N(c1c(C(F)(F)F)c(SC(F)(F)F)c(C(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F 165. 3
+CC(=O)N(c1c(C(F)(F)F)c(SC(F)(F)F)c(C#N)c2nsnc12)C(F)(F)C(F)(F)F 166. 3
+COc1c(SC(F)(F)F)c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12 167. 3
+CC(=O)N(c1c(C(F)(F)F)c(SC(F)(F)F)c(OC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F 168. 3
+CSc1c(SC(F)(F)F)c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12 169. 3
+CC(=O)N(c1c(C(F)(F)F)c(SC(F)(F)F)c(SC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F 170. 3
+CC(=O)N(c1c(C(F)(F)F)c(SC(F)(F)F)c(Br)c2nsnc12)C(F)(F)C(F)(F)F 171. 3
+CC(=O)N(c1c(C(F)(F)F)c(SC(F)(F)F)c(N(C)C)c2nsnc12)C(F)(F)C(F)(F)F 172. 2
+CC(=O)N(c1c(C(F)(F)F)c(SC(F)(F)F)c([N+](=O)[O-])c2nsnc12)C(F)(F)C(F)(F)F 173. 4
+CC(=O)N(c1c(C(F)(F)F)c(SC(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12)C(F)(F)C(F)(F)F 174. 4
+CC(=O)N(c1c(C(F)(F)F)c(N(C)C)c(C)c2nsnc12)C(F)(F)C(F)(F)F 175. 2
+CC(=O)N(c1c(C(F)(F)F)c(N(C)C)c(C(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F 176. 3
+CC(=O)N(c1c(C(F)(F)F)c(N(C)C)c(C#N)c2nsnc12)C(F)(F)C(F)(F)F 177. 3
+COc1c(N(C)C)c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12 178. 3
+CC(=O)N(c1c(C(F)(F)F)c(N(C)C)c(OC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F 179. 3
+CSc1c(N(C)C)c(C(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12 180. 3
+CC(=O)N(c1c(C(F)(F)F)c(N(C)C)c(SC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F 181. 3
+CC(=O)N(c1c(C(F)(F)F)c(N(C)C)c(Br)c2nsnc12)C(F)(F)C(F)(F)F 182. 3
+CC(=O)N(c1c(C(F)(F)F)c(N(C)C)c(N(C)C)c2nsnc12)C(F)(F)C(F)(F)F 183. 2
+CC(=O)N(c1c(C(F)(F)F)c(N(C)C)c([N+](=O)[O-])c2nsnc12)C(F)(F)C(F)(F)F 184. 4
+CC(=O)N(c1c(C(F)(F)F)c(N(C)C)c(S(=O)(=O)N(C)C)c2nsnc12)C(F)(F)C(F)(F)F 185. 4
+CC(=O)N(c1c(C#N)c(C)c(C)c2nsnc12)C(F)(F)C(F)(F)F 186. 2
+CC(=O)N(c1c(C#N)c(C)c(C(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F 187. 2
+CC(=O)N(c1c(C#N)c(C)c(C#N)c2nsnc12)C(F)(F)C(F)(F)F 188. 2
+COc1c(C)c(C#N)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12 189. 2
+CC(=O)N(c1c(C#N)c(C)c(OC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F 190. 2
+CSc1c(C)c(C#N)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12 191. 2
+CC(=O)N(c1c(C#N)c(C)c(SC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F 192. 2
+CC(=O)N(c1c(C#N)c(C)c(Br)c2nsnc12)C(F)(F)C(F)(F)F 193. 2
+CC(=O)N(c1c(C#N)c(C)c(N(C)C)c2nsnc12)C(F)(F)C(F)(F)F 194. 1
+CC(=O)N(c1c(C#N)c(C)c([N+](=O)[O-])c2nsnc12)C(F)(F)C(F)(F)F 195. 3
+CC(=O)N(c1c(C#N)c(C)c(S(=O)(=O)N(C)C)c2nsnc12)C(F)(F)C(F)(F)F 196. 4
+CC(=O)N(c1c(C#N)c(C(F)(F)F)c(C)c2nsnc12)C(F)(F)C(F)(F)F 197. 2
+CC(=O)N(c1c(C#N)c(C(F)(F)F)c(C(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F 198. 3
+CC(=O)N(c1c(C#N)c(C(F)(F)F)c(C#N)c2nsnc12)C(F)(F)C(F)(F)F 199. 3
+COc1c(C(F)(F)F)c(C#N)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12 200. 3
+You are a chemist, please use the molecules provided, group them into five clusters based on their redox potential (extremely low : 0, low: 1, medium: 2, high: 3, extremely high :4). Analyze the following features for each molecule: Number and type of electron-withdrawing groups (e.g., CF₃, NO₂, CN, halogens). Number and type of electron-donating groups (e.g., alkyl, methoxy, hydroxyl). Positioning of substituents on aromatic rings (meta, para, ortho). Presence of sulfur-containing functional groups (e.g., SCF₃, S=O). Degree of molecular polarity (based on F, O, or N atoms). Use these criteria to evaluate the redox potential qualitatively and cluster the molecules accordingly.**Respond strictly with the numerical cluster labels only. Do not include any additional text.**
+Now please cluster the following molecules:
+1. CC(=O)N(c1c(C#N)c(C(F)(F)F)c(OC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+2. CSc1c(C(F)(F)F)c(C#N)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+3. CC(=O)N(c1c(C#N)c(C(F)(F)F)c(SC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+4. CC(=O)N(c1c(C#N)c(C(F)(F)F)c(Br)c2nsnc12)C(F)(F)C(F)(F)F
+5. CC(=O)N(c1c(C#N)c(C(F)(F)F)c(N(C)C)c2nsnc12)C(F)(F)C(F)(F)F
+6. CC(=O)N(c1c(C#N)c(C(F)(F)F)c([N+](=O)[O-])c2nsnc12)C(F)(F)C(F)(F)F
+7. CC(=O)N(c1c(C#N)c(C(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12)C(F)(F)C(F)(F)F
+8. CC(=O)N(c1c(C#N)c(C#N)c(C)c2nsnc12)C(F)(F)C(F)(F)F
+9. CC(=O)N(c1c(C#N)c(C#N)c(C(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+10. CC(=O)N(c1c(C#N)c(C#N)c(C#N)c2nsnc12)C(F)(F)C(F)(F)F
+11. COc1c(C#N)c(C#N)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+12. CC(=O)N(c1c(C#N)c(C#N)c(OC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+13. CSc1c(C#N)c(C#N)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+14. CC(=O)N(c1c(C#N)c(C#N)c(SC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+15. CC(=O)N(c1c(C#N)c(C#N)c(Br)c2nsnc12)C(F)(F)C(F)(F)F
+16. CC(=O)N(c1c(C#N)c(C#N)c(N(C)C)c2nsnc12)C(F)(F)C(F)(F)F
+17. CC(=O)N(c1c(C#N)c(C#N)c([N+](=O)[O-])c2nsnc12)C(F)(F)C(F)(F)F
+18. CC(=O)N(c1c(C#N)c(C#N)c(S(=O)(=O)N(C)C)c2nsnc12)C(F)(F)C(F)(F)F
+19. COc1c(C#N)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1C
+20. COc1c(C#N)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1C(F)(F)F
+21. COc1c(C#N)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1C#N
+22. COc1c(C#N)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1OC
+23. COc1c(C#N)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1OC(F)(F)F
+24. COc1c(C#N)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1SC
+25. COc1c(C#N)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1SC(F)(F)F
+26. COc1c(C#N)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1Br
+27. COc1c(C#N)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1N(C)C
+28. COc1c(C#N)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1[N+](=O)[O-]
+29. COc1c(C#N)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1S(=O)(=O)N(C)C
+30. CC(=O)N(c1c(C#N)c(OC(F)(F)F)c(C)c2nsnc12)C(F)(F)C(F)(F)F
+31. CC(=O)N(c1c(C#N)c(OC(F)(F)F)c(C(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+32. CC(=O)N(c1c(C#N)c(OC(F)(F)F)c(C#N)c2nsnc12)C(F)(F)C(F)(F)F
+33. COc1c(OC(F)(F)F)c(C#N)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+34. CC(=O)N(c1c(C#N)c(OC(F)(F)F)c(OC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+35. CSc1c(OC(F)(F)F)c(C#N)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+36. CC(=O)N(c1c(C#N)c(OC(F)(F)F)c(SC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+37. CC(=O)N(c1c(C#N)c(OC(F)(F)F)c(Br)c2nsnc12)C(F)(F)C(F)(F)F
+38. CC(=O)N(c1c(C#N)c(OC(F)(F)F)c(N(C)C)c2nsnc12)C(F)(F)C(F)(F)F
+39. CC(=O)N(c1c(C#N)c(OC(F)(F)F)c([N+](=O)[O-])c2nsnc12)C(F)(F)C(F)(F)F
+40. CC(=O)N(c1c(C#N)c(OC(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12)C(F)(F)C(F)(F)F
+41. CSc1c(C#N)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1C
+42. CSc1c(C#N)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1C(F)(F)F
+43. CSc1c(C#N)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1C#N
+44. COc1c(SC)c(C#N)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+45. CSc1c(C#N)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1OC(F)(F)F
+46. CSc1c(C#N)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1SC
+47. CSc1c(C#N)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1SC(F)(F)F
+48. CSc1c(C#N)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1Br
+49. CSc1c(C#N)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1N(C)C
+50. CSc1c(C#N)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1[N+](=O)[O-]
+51. CSc1c(C#N)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1S(=O)(=O)N(C)C
+52. CC(=O)N(c1c(C#N)c(SC(F)(F)F)c(C)c2nsnc12)C(F)(F)C(F)(F)F
+53. CC(=O)N(c1c(C#N)c(SC(F)(F)F)c(C(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+54. CC(=O)N(c1c(C#N)c(SC(F)(F)F)c(C#N)c2nsnc12)C(F)(F)C(F)(F)F
+55. COc1c(SC(F)(F)F)c(C#N)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+56. CC(=O)N(c1c(C#N)c(SC(F)(F)F)c(OC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+57. CSc1c(SC(F)(F)F)c(C#N)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+58. CC(=O)N(c1c(C#N)c(SC(F)(F)F)c(SC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+59. CC(=O)N(c1c(C#N)c(SC(F)(F)F)c(Br)c2nsnc12)C(F)(F)C(F)(F)F
+60. CC(=O)N(c1c(C#N)c(SC(F)(F)F)c(N(C)C)c2nsnc12)C(F)(F)C(F)(F)F
+61. CC(=O)N(c1c(C#N)c(SC(F)(F)F)c([N+](=O)[O-])c2nsnc12)C(F)(F)C(F)(F)F
+62. CC(=O)N(c1c(C#N)c(SC(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12)C(F)(F)C(F)(F)F
+63. CC(=O)N(c1c(C#N)c(N(C)C)c(C)c2nsnc12)C(F)(F)C(F)(F)F
+64. CC(=O)N(c1c(C#N)c(N(C)C)c(C(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+65. CC(=O)N(c1c(C#N)c(N(C)C)c(C#N)c2nsnc12)C(F)(F)C(F)(F)F
+66. COc1c(N(C)C)c(C#N)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+67. CC(=O)N(c1c(C#N)c(N(C)C)c(OC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+68. CSc1c(N(C)C)c(C#N)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+69. CC(=O)N(c1c(C#N)c(N(C)C)c(SC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+70. CC(=O)N(c1c(C#N)c(N(C)C)c(Br)c2nsnc12)C(F)(F)C(F)(F)F
+71. CC(=O)N(c1c(C#N)c(N(C)C)c(N(C)C)c2nsnc12)C(F)(F)C(F)(F)F
+72. CC(=O)N(c1c(C#N)c(N(C)C)c([N+](=O)[O-])c2nsnc12)C(F)(F)C(F)(F)F
+73. CC(=O)N(c1c(C#N)c(N(C)C)c(S(=O)(=O)N(C)C)c2nsnc12)C(F)(F)C(F)(F)F
+74. COc1c(C)c(C)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+75. COc1c(C)c(C(F)(F)F)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+76. COc1c(C)c(C#N)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+77. COc1c(C)c(OC)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+78. COc1c(C)c(OC(F)(F)F)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+79. COc1c(C)c(SC)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+80. COc1c(C)c(SC(F)(F)F)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+81. COc1c(C)c(Br)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+82. COc1c(C)c(N(C)C)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+83. COc1c(C)c([N+](=O)[O-])c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+84. COc1c(C)c(S(=O)(=O)N(C)C)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+85. COc1c(C(F)(F)F)c(C)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+86. COc1c(C(F)(F)F)c(C(F)(F)F)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+87. COc1c(C(F)(F)F)c(C#N)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+88. COc1c(C(F)(F)F)c(OC)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+89. COc1c(C(F)(F)F)c(OC(F)(F)F)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+90. COc1c(C(F)(F)F)c(SC)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+91. COc1c(C(F)(F)F)c(SC(F)(F)F)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+92. COc1c(C(F)(F)F)c(Br)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+93. COc1c(C(F)(F)F)c(N(C)C)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+94. COc1c(C(F)(F)F)c([N+](=O)[O-])c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+95. COc1c(C(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+96. COc1c(C#N)c(C)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+97. COc1c(C#N)c(C(F)(F)F)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+98. COc1c(C#N)c(C#N)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+99. COc1c(C#N)c(OC)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+100. COc1c(C#N)c(OC(F)(F)F)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+101. COc1c(C#N)c(SC)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+102. COc1c(C#N)c(SC(F)(F)F)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+103. COc1c(C#N)c(Br)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+104. COc1c(C#N)c(N(C)C)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+105. COc1c(C#N)c([N+](=O)[O-])c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+106. COc1c(C#N)c(S(=O)(=O)N(C)C)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+107. COc1c(OC)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1C
+108. COc1c(OC)c(C(F)(F)F)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+109. COc1c(OC)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1C#N
+110. COc1c(OC)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1OC
+111. COc1c(OC)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1OC(F)(F)F
+112. COc1c(OC)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1SC
+113. COc1c(OC)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1SC(F)(F)F
+114. COc1c(OC)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1Br
+115. COc1c(OC)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1N(C)C
+116. COc1c(OC)c([N+](=O)[O-])c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+117. COc1c(OC)c(S(=O)(=O)N(C)C)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+118. COc1c(OC(F)(F)F)c(C)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+119. COc1c(OC(F)(F)F)c(C(F)(F)F)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+120. COc1c(OC(F)(F)F)c(C#N)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+121. COc1c(OC(F)(F)F)c(OC)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+122. COc1c(OC(F)(F)F)c(OC(F)(F)F)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+123. COc1c(OC(F)(F)F)c(SC)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+124. COc1c(OC(F)(F)F)c(SC(F)(F)F)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+125. COc1c(OC(F)(F)F)c(Br)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+126. COc1c(OC(F)(F)F)c(N(C)C)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+127. COc1c(OC(F)(F)F)c([N+](=O)[O-])c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+128. COc1c(OC(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+129. COc1c(SC)c(C)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+130. COc1c(SC)c(C(F)(F)F)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+131. COc1c(SC)c(C#N)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+132. COc1c(SC)c(OC)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+133. COc1c(SC)c(OC(F)(F)F)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+134. COc1c(SC)c(SC)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+135. COc1c(SC)c(SC(F)(F)F)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+136. COc1c(SC)c(Br)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+137. COc1c(SC)c(N(C)C)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+138. COc1c(SC)c([N+](=O)[O-])c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+139. COc1c(SC)c(S(=O)(=O)N(C)C)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+140. COc1c(SC(F)(F)F)c(C)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+141. COc1c(SC(F)(F)F)c(C(F)(F)F)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+142. COc1c(SC(F)(F)F)c(C#N)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+143. COc1c(SC(F)(F)F)c(OC)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+144. COc1c(SC(F)(F)F)c(OC(F)(F)F)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+145. COc1c(SC(F)(F)F)c(SC)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+146. COc1c(SC(F)(F)F)c(SC(F)(F)F)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+147. COc1c(SC(F)(F)F)c(Br)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+148. COc1c(SC(F)(F)F)c(N(C)C)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+149. COc1c(SC(F)(F)F)c([N+](=O)[O-])c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+150. COc1c(SC(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+151. COc1c(N(C)C)c(C)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+152. COc1c(N(C)C)c(C(F)(F)F)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+153. COc1c(N(C)C)c(C#N)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+154. COc1c(N(C)C)c(OC)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+155. COc1c(N(C)C)c(OC(F)(F)F)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+156. COc1c(N(C)C)c(SC)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+157. COc1c(N(C)C)c(SC(F)(F)F)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+158. COc1c(N(C)C)c(Br)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+159. COc1c(N(C)C)c(N(C)C)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+160. COc1c(N(C)C)c([N+](=O)[O-])c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+161. COc1c(N(C)C)c(S(=O)(=O)N(C)C)c2nsnc2c1N(C(C)=O)C(F)(F)C(F)(F)F
+162. CC(=O)N(c1c(OC(F)(F)F)c(C)c(C)c2nsnc12)C(F)(F)C(F)(F)F
+163. CC(=O)N(c1c(OC(F)(F)F)c(C)c(C(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+164. CC(=O)N(c1c(OC(F)(F)F)c(C)c(C#N)c2nsnc12)C(F)(F)C(F)(F)F
+165. COc1c(C)c(OC(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+166. CC(=O)N(c1c(OC(F)(F)F)c(C)c(OC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+167. CSc1c(C)c(OC(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+168. CC(=O)N(c1c(OC(F)(F)F)c(C)c(SC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+169. CC(=O)N(c1c(OC(F)(F)F)c(C)c(Br)c2nsnc12)C(F)(F)C(F)(F)F
+170. CC(=O)N(c1c(OC(F)(F)F)c(C)c(N(C)C)c2nsnc12)C(F)(F)C(F)(F)F
+171. CC(=O)N(c1c(OC(F)(F)F)c(C)c([N+](=O)[O-])c2nsnc12)C(F)(F)C(F)(F)F
+172. CC(=O)N(c1c(OC(F)(F)F)c(C)c(S(=O)(=O)N(C)C)c2nsnc12)C(F)(F)C(F)(F)F
+173. CC(=O)N(c1c(OC(F)(F)F)c(C(F)(F)F)c(C)c2nsnc12)C(F)(F)C(F)(F)F
+174. CC(=O)N(c1c(OC(F)(F)F)c(C(F)(F)F)c(C(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+175. CC(=O)N(c1c(OC(F)(F)F)c(C(F)(F)F)c(C#N)c2nsnc12)C(F)(F)C(F)(F)F
+176. COc1c(C(F)(F)F)c(OC(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+177. CC(=O)N(c1c(OC(F)(F)F)c(C(F)(F)F)c(OC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+178. CSc1c(C(F)(F)F)c(OC(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+179. CC(=O)N(c1c(OC(F)(F)F)c(C(F)(F)F)c(SC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+180. CC(=O)N(c1c(OC(F)(F)F)c(C(F)(F)F)c(Br)c2nsnc12)C(F)(F)C(F)(F)F
+181. CC(=O)N(c1c(OC(F)(F)F)c(C(F)(F)F)c(N(C)C)c2nsnc12)C(F)(F)C(F)(F)F
+182. CC(=O)N(c1c(OC(F)(F)F)c(C(F)(F)F)c([N+](=O)[O-])c2nsnc12)C(F)(F)C(F)(F)F
+183. CC(=O)N(c1c(OC(F)(F)F)c(C(F)(F)F)c(S(=O)(=O)N(C)C)c2nsnc12)C(F)(F)C(F)(F)F
+184. CC(=O)N(c1c(OC(F)(F)F)c(C#N)c(C)c2nsnc12)C(F)(F)C(F)(F)F
+185. CC(=O)N(c1c(OC(F)(F)F)c(C#N)c(C(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+186. CC(=O)N(c1c(OC(F)(F)F)c(C#N)c(C#N)c2nsnc12)C(F)(F)C(F)(F)F
+187. COc1c(C#N)c(OC(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+188. CC(=O)N(c1c(OC(F)(F)F)c(C#N)c(OC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+189. CSc1c(C#N)c(OC(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc12
+190. CC(=O)N(c1c(OC(F)(F)F)c(C#N)c(SC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F
+191. CC(=O)N(c1c(OC(F)(F)F)c(C#N)c(Br)c2nsnc12)C(F)(F)C(F)(F)F
+192. CC(=O)N(c1c(OC(F)(F)F)c(C#N)c(N(C)C)c2nsnc12)C(F)(F)C(F)(F)F
+193. CC(=O)N(c1c(OC(F)(F)F)c(C#N)c([N+](=O)[O-])c2nsnc12)C(F)(F)C(F)(F)F
+194. CC(=O)N(c1c(OC(F)(F)F)c(C#N)c(S(=O)(=O)N(C)C)c2nsnc12)C(F)(F)C(F)(F)F
+195. COc1c(OC(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1C
+196. COc1c(OC(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1C(F)(F)F
+197. COc1c(OC(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1C#N
+198. COc1c(OC(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1OC
+199. COc1c(OC(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1OC(F)(F)F
+200. COc1c(OC(F)(F)F)c(N(C(C)=O)C(F)(F)C(F)(F)F)c2nsnc2c1SC
+
+2, 1, 3, 1, 0, 4, 4, 0, 1, 2, 0, 1, 0, 3, 1, 0, 4, 4, 0, 1, 2, 0, 1, 0, 3, 1, 0, 4, 4, 0, 1, 2, 0, 1, 0, 3, 1, 0, 4, 4, 0, 1, 2, 0, 1, 0, 3, 1, 0, 4, 4, 0, 1, 2, 0, 1, 0, 3, 1, 0, 4, 4, 0, 1, 2, 0, 1, 0, 3, 1, 0, 4, 4, 0, 1, 2, 0, 1, 0, 3, 1, 0, 4, 4, 0, 1, 2, 0, 1, 0, 3, 1, 0, 4, 4, 0, 1, 2, 0, 1, 0, 3, 1, 0, 4, 4, 0, 1, 2, 0, 1, 0, 3, 1, 0, 4, 4, 0, 1, 2, 0, 1, 0, 3, 1, 0, 4, 4, 0, 1, 2, 0, 1, 0, 3, 1, 0, 4, 4, 0, 1, 2, 0, 1, 0, 3, 1, 0, 4, 4, 0, 1, 2, 0, 1, 0, 3, 1, 0, 4, 4, 0, 1, 2, 0, 1, 0, 3, 1, 0, 4, 4, 0, 1, 2, 0, 1, 0, 3, 1, 0, 4, 4, 0, 1, 2, 0, 1, 0, 3, 1, 0, 4, 4
+CC(=O)N(c1c(C#N)c(C(F)(F)F)c(OC(F)(F)F)c2nsnc12)C(F)(F)C(F)(F)F 2, 1, 3, 1, 0, 4, 4, 0, 1, 2, 0, 1, 0, 3, 1, 0, 4, 4, 0, 1, 2, 0, 1, 0, 3, 1, 0, 4, 4, 0, 1, 2, 0, 1, 0, 3, 1, 0, 4, 4, 0, 1, 2, 0, 1, 0, 3, 1, 0, 4, 4, 0, 1, 2, 0, 1, 0, 3, 1, 0, 4, 4, 0, 1, 2, 0, 1, 0, 3, 1, 0, 4, 4, 0, 1, 2, 0, 1, 0, 3, 1, 0, 4, 4, 0, 1, 2, 0, 1, 0, 3, 1, 0, 4, 4, 0, 1, 2, 0, 1, 0, 3, 1, 0, 4, 4, 0, 1, 2, 0, 1, 0, 3, 1, 0, 4, 4, 0, 1, 2, 0, 1, 0, 3, 1, 0, 4, 4, 0, 1, 2, 0, 1, 0, 3, 1, 0, 4, 4, 0, 1, 2, 0, 1, 0, 3, 1, 0, 4, 4, 0, 1, 2, 0, 1, 0, 3, 1, 0, 4, 4, 0, 1, 2, 0, 1, 0, 3, 1, 0, 4, 4, 0, 1, 2, 0, 1, 0, 3, 1, 0, 4, 4, 0, 1, 2, 0, 1, 0, 3, 1, 0, 4, 4

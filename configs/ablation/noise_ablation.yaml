@@ -1,0 +1,134 @@
+# Noise Ablation Study Configuration for LLMAT on Toy Benchmarks
+# This config is used to evaluate robustness to label noise
+
+# Experiment settings
+n_init_data: 10
+exp_len: 100
+acqf: ei  # ts, ei, ucb
+run_subset_only: false
+normalize_y: false
+
+# Noise settings (overridden by ablation script)
+noise_type: gaussian  # gaussian, uniform, multiplicative
+noise_scale: 0.0  # 0.0 (no noise), 0.1, 0.2, 0.5, 1.0
+noise_seed: 42
+
+# Toy benchmark settings
+prompt_type: just-smiles
+feature_reduction: average
+clustering_type: kmeans
+iupac: false
+
+# LLMAT hyperparameters
+gamma: 0.5
+lmbda: 0.5
+eta: 0.005
+tree_depth: 3
+p_val: 0
+reinit: false
+threshold: 0.5
+alpha: 1.0
+
+# Training settings
+fix_args:
+  batch_size: 256
+  head:
+    n_epochs: 50
+    lr: 1e-2
+    batch_size: 256
+    leaf_sample_size: 2
+
+# Finetuning settings (if needed)
+finetuning_args:
+  batch_size: 16
+  head:
+    n_epochs: 50
+    lr: 1e-2
+    batch_size: 256
+    leaf_sample_size: 2
+  lora:
+    n_epochs: 50
+    batch_size: 16
+    reg: 0
+    r: 4
+    alpha: 16
+    dropout: 0.1
+    bias: none
+    save: head
+    lr: 3e-5
+    grad_clip: 0.0
+
+# Ablation study configuration
+ablation:
+  # Functions to test
+  functions:
+    - levy
+    # - ackley
+
+  # Noise types to evaluate
+  noise_types:
+    - gaussian
+    # - uniform
+    # - multiplicative
+
+  # Noise scales to test (relative to target std)
+  noise_scales:
+    - 0.0    # baseline (no noise)
+    - 0.05   # 5% noise
+    - 0.1    # 10% noise
+    - 0.2    # 20% noise
+    - 0.5    # 50% noise
+    - 1.0    # 100% noise
+
+  # Number of random seeds for each configuration
+  n_seeds: 5
+
+  # Random seeds to use
+  seeds:
+    - 42
+    - 123
+    - 456
+    - 789
+    - 1024
+
+  # Dimensionality to test
+  dims:
+    - 10
+
+  # Number of samples in toy dataset
+  n_samples: 1000
+
+  # Methods to compare
+  methods:
+    - llmat
+    - gp
+    - laplace
+    # - random
+
+# Baseline BO algorithm settings
+baselines:
+  # Acquisition function for baselines
+  acq_func: ei  # ei or ucb
+
+  # GP settings
+  gp:
+    lr: 0.01
+    n_epochs: 100
+
+  # Laplace settings
+  laplace:
+    hidden_dims: [64, 64]
+    lr: 1e-3
+    n_epochs: 500
+    batch_size: 20
+
+# Device settings
+training:
+  device: cpu  # cpu or cuda
+
+# Toy benchmark settings
+toy:
+  dims: 10
+  n_samples: 1000
+  n_init: 40  # Number of initial random samples
+  n_iters: 100  # Number of BO iterations
