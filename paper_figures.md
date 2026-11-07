@@ -1,5 +1,7 @@
 # Paper Figures ↔ Plotting Code
 
+> **Temporary:** this mapping was compiled quickly and some details still need to be checked against the code and the paper; it will be updated after the check.
+
 Paper: `LLMAT-paper/NeurIPS/neurips_2026.tex` (camera-ready version, Overleaf project `6aef1bff0b27321f734537d9`, commit `e7825c2`). Code: this repository (`LLMAT/`). Figure numbers, page numbers and tex line numbers refer to the compiled camera-ready PDF (52 pages, no checklist).
 
 - Code paths are relative to the repository root. Scripts save with relative paths, so run them from the repository root (`python -m plotting.plot_gap`).
