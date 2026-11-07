@@ -110,5 +110,5 @@ Large cached files are not tracked by git and must be placed under `benchmarks/M
 Our baseline implementations refer to the following open-source code:
 
 - [wiseodd/lapeft-bayesopt](https://github.com/wiseodd/lapeft-bayesopt) (LAPLACE / LAPEFT baselines and benchmarks, from "A Sober Look at LLMs for Material Discovery")
-- LFBO (likelihood-free Bayesian optimization)
+- [lfbo-ml/lfbo](https://github.com/lfbo-ml/lfbo) (LFBO, likelihood-free Bayesian optimization)
 - [facebookresearch/LaMCTS](https://github.com/facebookresearch/LaMCTS) (LA-MCTS search-space partitioning)
