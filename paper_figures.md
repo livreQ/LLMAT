@@ -1,6 +1,6 @@
 # Paper Figures ↔ Plotting Code
 
-Paper: `LLMAT-paper/NeurIPS/neurips_2026.tex` (Overleaf `8f2324c` + local edits). Code: this repository (`LLMAT/`). Figure and page numbers come from a locally compiled PDF (48 pages).
+Paper: `LLMAT-paper/NeurIPS/neurips_2026.tex` (camera-ready version, Overleaf project `6aef1bff0b27321f734537d9`, commit `e7825c2`). Code: this repository (`LLMAT/`). Figure numbers, page numbers and tex line numbers refer to the compiled camera-ready PDF (52 pages, no checklist).
 
 - Code paths are relative to the repository root. Scripts save with relative paths, so run them from the repository root (`python -m plotting.plot_gap`).
 - In most `plotting/` scripts, `__main__` enables only one function, and parameters such as `f_models` / `finetuning` were edited by hand: edit `__main__` before drawing the corresponding figure.
@@ -13,7 +13,7 @@ Paper: `LLMAT-paper/NeurIPS/neurips_2026.tex` (Overleaf `8f2324c` + local edits)
 
 > Overview of LLMAT: Binary classifiers on the LLM features recursively partition the candidate space to a tree …
 
-tex line 366
+tex line 367
 
 | Figure file (`figures/`) | Code | Function | Notes |
 |---|---|---|---|
@@ -26,17 +26,17 @@ tex line 366
 
 > Leaf-node AFs offer more fine-grained candidate suggestions for Levy-1D optimization.
 
-tex line 708
+tex line 802
 
 | Figure file (`figures/`) | Code | Function | Notes |
 |---|---|---|---|
 | `toy_data/root_leaf_acqf_iter_5.png` | [plotting/visualize_toy_bo.py](plotting/visualize_toy_bo.py) | `visualize_root_and_leaf_acqf` | Run scripts/run_visualization.sh |
 
-### Fig. 3 (p.7) `fig:t5-chem-mol-finetuning`
+### Fig. 3 (p.8) `fig:t5-chem-mol-finetuning`
 
 > Left: Comparison over baselines on fixed features across all models and datasets.
 
-tex line 742
+tex line 836
 
 | Figure file (`figures/`) | Code | Function | Notes |
 |---|---|---|---|
@@ -44,21 +44,21 @@ tex line 742
 | `GAPs/t5-base-chem_GAP_finetune_average.pdf` | [plotting/plot_gap.py](plotting/plot_gap.py) | `plot_average_gap` | Outputs to results/figs/0907/GAPs/ |
 | `Regrets/t5-base-chem_regret_finetune_average.pdf` | [plotting/plot_regret.py](plotting/plot_regret.py) | `plot_average_regret` | Outputs to results/figs/0907/Regrets/ |
 
-### Fig. 4 (p.8) `fig:fix-best-y`
+### Fig. 4 (p.9) `fig:fix-best-y`
 
 > BO with fixed features (best-performing feature per algorithm shown). LLMAT achieves best overall performance,…
 
-tex line 766
+tex line 860
 
 | Figure file (`figures/`) | Code | Function | Notes |
 |---|---|---|---|
 | `Bestys/all_datasets_comparison_best_auc.pdf` | [plotting/plot_fixed.py](plotting/plot_fixed.py) | `plot_best_y_all_seaborn_auc3` | The auc / auc2 / auc3 variants all write the same filename; main keeps auc3 (commented out) |
 
-### Fig. 5 (p.8) `fig:molformer_tree_depth`
+### Fig. 5 (p.9) `fig:molformer_tree_depth`
 
 > (no caption)
 
-tex line 784
+tex line 878
 
 | Figure file (`figures/`) | Code | Function | Notes |
 |---|---|---|---|
@@ -70,17 +70,17 @@ tex line 784
 
 > Average reduced prediction time percentage, average GAP, and average regret across six datasets for LLM-base c…
 
-tex line 818
+tex line 912
 
 | Figure file (`figures/`) | Code | Function | Notes |
 |---|---|---|---|
 | `time/molformer_pval_ablation.pdf` | [plotting/plot_cluster_time_ablation.py](plotting/plot_cluster_time_ablation.py) | `plot_average_prediction_time_arcoss_datasets` |  |
 
-### Fig. 7 (p.9) `fig:molformer_algo_ablation_remove`
+### Fig. 7 (p.10) `fig:molformer_algo_ablation_remove`
 
 > Left: Average GAP across six datasets illustrating the impact of individual algorithmic module ablations. Righ…
 
-tex line 846
+tex line 942
 
 | Figure file (`figures/`) | Code | Function | Notes |
 |---|---|---|---|
@@ -88,13 +88,13 @@ tex line 846
 | `ablation/gap_visualization_normalized.png` | [plotting/visualize_clustering_prompt_gaps.py](plotting/visualize_clustering_prompt_gaps.py) | `visualize_clustering_prompt_gaps` | Outputs to the current directory |
 
 
-## Analysis of LLM Property Ranking
+## General LLMs Capture Relative Property Ordering, Not Absolute Values
 
-### Fig. 8 (p.16) `fig:llm_cluster`
+### Fig. 8 (p.18) `fig:llm_cluster`
 
 > General LLMs provide coarse property ranking of redox potentials rather than accurate numeric value for the th…
 
-tex line 881
+tex line 983
 
 | Figure file (`figures/`) | Code | Function | Notes |
 |---|---|---|---|
@@ -103,11 +103,11 @@ tex line 881
 
 ## Clustering Prompts
 
-### Fig. 9 (p.23) `fig:prompt_ablation`
+### Fig. 9 (p.25) `fig:prompt_ablation`
 
 > Prompt variation's effect on cluster labels.
 
-tex line 1256
+tex line 1362
 
 | Figure file (`figures/`) | Code | Function | Notes |
 |---|---|---|---|
@@ -116,313 +116,313 @@ tex line 1256
 
 ## Additional Experimental Results
 
-### Fig. 10 (p.27) `fig:fix-best-y-all`
+### Fig. 10 (p.30) `fig:fix-best-y-all`
 
 > BO process for different datasets on features extracted from various foundation models.
 
-tex line 1530
+tex line 1645
 
 | Figure file (`figures/`) | Code | Function | Notes |
 |---|---|---|---|
 | `Bestys/all_datasets_comparison_all.pdf` | [plotting/plot_fixed.py](plotting/plot_fixed.py) | `plot_best_y_all_seaborn` |  |
 
-### Fig. 11 (p.27) `fig:t5-chem-fixed-train-time`
+### Fig. 11 (p.30) `fig:t5-chem-fixed-train-time`
 
 > Training time comparison on different chemistry datasets with T5-Chem model.
 
-tex line 1539
+tex line 1654
 
 | Figure file (`figures/`) | Code | Function | Notes |
 |---|---|---|---|
 | `time/FXredox-mer_t5-base-chem_trace_training_time.pdf` and others, 6 in total (FXPhotovoltaics, FXkinase, FXlaser, FXphotoswitch, FXredox-mer, FXsolvation) | [plotting/plot_time.py](plotting/plot_time.py) | `plot_training_time` | FX=fixed, FT=finetuning (finetuning switch in main) |
 
-### Fig. 12 (p.28) `fig:t5-chem-fixed-pred-time`
+### Fig. 12 (p.31) `fig:t5-chem-fixed-pred-time`
 
 > Prediction time comparison on different chemistry datasets with T5-Chem model.
 
-tex line 1554
+tex line 1669
 
 | Figure file (`figures/`) | Code | Function | Notes |
 |---|---|---|---|
 | `time/FXredox-mer_t5-base-chem_trace_pred_time.pdf` and others, 6 in total (FXPhotovoltaics, FXkinase, FXlaser, FXphotoswitch, FXredox-mer, FXsolvation) | [plotting/plot_time.py](plotting/plot_time.py) | `plot_prediction_time` | Same as above |
 
-### Fig. 13 (p.28) `fig:t5-chem-fixed-overall-time`
+### Fig. 13 (p.31) `fig:t5-chem-fixed-overall-time`
 
 > Overall time comparison on different chemistry datasets with T5-Chem model.
 
-tex line 1566
+tex line 1681
 
 | Figure file (`figures/`) | Code | Function | Notes |
 |---|---|---|---|
 | `time/FXredox-mer_t5-base-chem_trace_time.pdf` and others, 6 in total (FXPhotovoltaics, FXkinase, FXlaser, FXphotoswitch, FXredox-mer, FXsolvation) | [plotting/plot_time.py](plotting/plot_time.py) | `plot_time` | Same as above |
 
-### Fig. 14 (p.29) `fig:t5-chem-finetune-his`
+### Fig. 14 (p.32) `fig:t5-chem-finetune-his`
 
 > Historical optimums comparison on different chemistry datasets using T5-Chem model.
 
-tex line 1623
+tex line 1738
 
 | Figure file (`figures/`) | Code | Function | Notes |
 |---|---|---|---|
 | `Bestys/redox-mer_t5-base-chem_finetune.pdf` and others, 6 in total (kinase, laser, pce, photoswitch, redox-mer, solvation) | [plotting/plot_best_y.py](plotting/plot_best_y.py) | `plot_best_y` | Outputs to results/figs/0907/Bestys/ |
 
-### Fig. 15 (p.29) `fig:t5-chem-finetune-gap`
+### Fig. 15 (p.32) `fig:t5-chem-finetune-gap`
 
 > GAP comparison on different chemistry datasets with T5-Chem model.
 
-tex line 1637
+tex line 1752
 
 | Figure file (`figures/`) | Code | Function | Notes |
 |---|---|---|---|
 | `GAPs/redox-mer_t5-base-chem_GAP_finetune.pdf` and others, 6 in total (Photovoltaics, kinase, laser, photoswitch, redox-mer, solvation) | [plotting/plot_gap.py](plotting/plot_gap.py) | `plot_gap` | One per dataset; pce is renamed to Photovoltaics in the code |
 
-### Fig. 16 (p.30) `fig:t5-chem-finetune-regret`
+### Fig. 16 (p.33) `fig:t5-chem-finetune-regret`
 
 > Regrets comparison on different chemistry datasets using T5-Chem model.
 
-tex line 1651
+tex line 1766
 
 | Figure file (`figures/`) | Code | Function | Notes |
 |---|---|---|---|
 | `Regrets/redox-mer_t5-base-chem_regret_finetune.pdf` and others, 6 in total (Photovoltaics, kinase, laser, photoswitch, redox-mer, solvation) | [plotting/plot_regret.py](plotting/plot_regret.py) | `plot_regret` | One per dataset; pce→Photovoltaics |
 
-### Fig. 17 (p.30) `fig:t5-chem-finetune-train-time`
+### Fig. 17 (p.33) `fig:t5-chem-finetune-train-time`
 
 > Training time comparison on different chemistry datasets with T5-Chem model.
 
-tex line 1689
+tex line 1804
 
 | Figure file (`figures/`) | Code | Function | Notes |
 |---|---|---|---|
 | `time/FTredox-mer_t5-base-chem_trace_training_time.pdf` and others, 6 in total (FTPhotovoltaics, FTkinase, FTlaser, FTphotoswitch, FTredox-mer, FTsolvation) | [plotting/plot_time.py](plotting/plot_time.py) | `plot_training_time` | FX=fixed, FT=finetuning (finetuning switch in main) |
 
-### Fig. 18 (p.31) `fig:t5-chem-finetune-pred-time`
+### Fig. 18 (p.34) `fig:t5-chem-finetune-pred-time`
 
 > Prediction time comparison on different chemistry datasets with T5-Chem model.
 
-tex line 1701
+tex line 1816
 
 | Figure file (`figures/`) | Code | Function | Notes |
 |---|---|---|---|
 | `time/FTredox-mer_t5-base-chem_trace_pred_time.pdf` and others, 6 in total (FTPhotovoltaics, FTkinase, FTlaser, FTphotoswitch, FTredox-mer, FTsolvation) | [plotting/plot_time.py](plotting/plot_time.py) | `plot_prediction_time` | Same as above |
 
-### Fig. 19 (p.31) `fig:t5-chem-finetune-overall-time`
+### Fig. 19 (p.34) `fig:t5-chem-finetune-overall-time`
 
 > Overall time comparison on different chemistry datasets with T5-Chem model.
 
-tex line 1713
+tex line 1828
 
 | Figure file (`figures/`) | Code | Function | Notes |
 |---|---|---|---|
 | `time/FTredox-mer_t5-base-chem_trace_time.pdf` and others, 6 in total (FTPhotoswitch, FTPhotovoltaics, FTkinase, FTlaser, FTredox-mer, FTsolvation) | [plotting/plot_time.py](plotting/plot_time.py) | `plot_time` | Same as above |
 
-### Fig. 20 (p.31) `fig:t5-chem-time-fix`
+### Fig. 20 (p.34) `fig:t5-chem-time-fix`
 
 > Computation time of different algorithms with fixed T5-Chem features across datasets.
 
-tex line 1726
+tex line 1841
 
 | Figure file (`figures/`) | Code | Function | Notes |
 |---|---|---|---|
 | `time/FXtime_comparison_grouped.pdf` | [plotting/plot_time.py](plotting/plot_time.py) | `plot_time_comparison_grouped` | The FX/FT prefix comes from the finetuning switch in main |
 
-### Fig. 21 (p.32) `fig:t5-chem-time-finetune`
+### Fig. 21 (p.35) `fig:t5-chem-time-finetune`
 
 > BO time for different datasets on finetuning T5-Chem model with LoRA.
 
-tex line 1732
+tex line 1847
 
 | Figure file (`figures/`) | Code | Function | Notes |
 |---|---|---|---|
 | `time/FTtime_comparison_grouped.pdf` | [plotting/plot_time.py](plotting/plot_time.py) | `plot_time_comparison_grouped` | The FX/FT prefix comes from the finetuning switch in main |
 
-### Fig. 22 (p.32) `fig:molformer-finetune-his`
+### Fig. 22 (p.35) `fig:molformer-finetune-his`
 
 > Historical optimums comparison on different chemistry datasets using Molformer.
 
-tex line 1745
+tex line 1860
 
 | Figure file (`figures/`) | Code | Function | Notes |
 |---|---|---|---|
 | `Bestys/redox-mer_molformer_finetune.pdf` and others, 6 in total (kinase, laser, pce, photoswitch, redox-mer, solvation) | [plotting/plot_best_y.py](plotting/plot_best_y.py) | `plot_best_y` | Outputs to results/figs/0907/Bestys/ |
 
-### Fig. 23 (p.32) `fig:molformer-regret`
+### Fig. 23 (p.35) `fig:molformer-regret`
 
 > Regrets comparison on different chemistry datasets using Molformer.
 
-tex line 1797
+tex line 1912
 
 | Figure file (`figures/`) | Code | Function | Notes |
 |---|---|---|---|
 | `Regrets/redox-mer_molformer_regret_finetune.pdf` and others, 6 in total (Photovoltaics, kinase, laser, photoswitch, redox-mer, solvation) | [plotting/plot_regret.py](plotting/plot_regret.py) | `plot_regret` | One per dataset; pce→Photovoltaics |
 
-### Fig. 24 (p.33) `fig:molformer-gap`
+### Fig. 24 (p.36) `fig:molformer-gap`
 
 > GAPs comparison on different chemistry datasets using Molformer
 
-tex line 1821
+tex line 1936
 
 | Figure file (`figures/`) | Code | Function | Notes |
 |---|---|---|---|
 | `GAPs/redox-mer_molformer_GAP_finetune.pdf` and others, 6 in total (Photovoltaics, kinase, laser, photoswitch, redox-mer, solvation) | [plotting/plot_gap.py](plotting/plot_gap.py) | `plot_gap` | One per dataset; pce is renamed to Photovoltaics in the code |
 
-### Fig. 25 (p.33) `fig:molformer`
+### Fig. 25 (p.36) `fig:molformer`
 
 > Average GAPs and regrets across all the datasets on finetuning and fixed Molformer.
 
-tex line 1844
+tex line 1959
 
 | Figure file (`figures/`) | Code | Function | Notes |
 |---|---|---|---|
 | `GAPs/molformer_GAP_finetune_average.pdf` | [plotting/plot_gap.py](plotting/plot_gap.py) | `plot_average_gap` | Outputs to results/figs/0907/GAPs/ |
 | `Regrets/molformer_regret_finetune_average.pdf` | [plotting/plot_regret.py](plotting/plot_regret.py) | `plot_average_regret` | Outputs to results/figs/0907/Regrets/ |
 
-### Fig. 26 (p.33) `fig:t5-chem_clustering_kmeans`
+### Fig. 26 (p.36) `fig:t5-chem_clustering_kmeans`
 
 > Distribution of property values for K-means clusters on features extracted from T5-Chem.
 
-tex line 1855
+tex line 1970
 
 | Figure file (`figures/`) | Code | Function | Notes |
 |---|---|---|---|
 | `clusters/redox-mer_t5-base-chem-just-smiles-average_kmeans_clusters.pdf` and others, 6 in total (kinase, laser, pce, photoswitch, redox-mer, solvation) | [benchmarks/MAT/material_benchmarks.py](benchmarks/MAT/material_benchmarks.py) | `MATBench.draw_clusters` | self.draw_clusters() is commented out in the constructor (line 146); enable it to draw; outputs to benchmarks/MAT/data/cluster_figs/ |
 
-### Fig. 27 (p.34) `fig:molformer_clustering_kmeans`
+### Fig. 27 (p.37) `fig:molformer_clustering_kmeans`
 
 > Distribution of property values for K-means clusters on features extracted from Molformer.
 
-tex line 1866
+tex line 1981
 
 | Figure file (`figures/`) | Code | Function | Notes |
 |---|---|---|---|
 | `clusters/redox-mer_molformer_kmeans_clusters.pdf` and others, 6 in total (kinase, laser, pce, photoswitch, redox-mer, solvation) | [benchmarks/MAT/material_benchmarks.py](benchmarks/MAT/material_benchmarks.py) | `MATBench.draw_clusters` | self.draw_clusters() is commented out in the constructor (line 146); enable it to draw; outputs to benchmarks/MAT/data/cluster_figs/ |
 
-### Fig. 28 (p.34) `fig:t5-chem_clustering_llms`
+### Fig. 28 (p.37) `fig:t5-chem_clustering_llms`
 
 > Distribution of property values for ChatGPT-based clustering results.
 
-tex line 1879
+tex line 1994
 
 | Figure file (`figures/`) | Code | Function | Notes |
 |---|---|---|---|
 | `clusters/redox-mer_t5-base-chem-just-smiles-average_llms_clusters.pdf` and others, 6 in total (kinase, laser, pce, photoswitch, redox-mer, solvation) | [benchmarks/MAT/material_benchmarks.py](benchmarks/MAT/material_benchmarks.py) | `MATBench.draw_clusters` | self.draw_clusters() is commented out in the constructor (line 146); enable it to draw; outputs to benchmarks/MAT/data/cluster_figs/ |
 
-### Fig. 29 (p.35) `fig:molformer-gap-paval-ablation`
+### Fig. 29 (p.38) `fig:molformer-gap-paval-ablation`
 
 > GAPs' change for different clustering approach and p-values using Molformer.
 
-tex line 1906
+tex line 2021
 
 | Figure file (`figures/`) | Code | Function | Notes |
 |---|---|---|---|
 | `pval_ablation/molformer_redox-mer_GAP_finetune_pval_ablation.pdf` and others, 6 in total (molformer) | [plotting/plot_cluster_time_ablation.py](plotting/plot_cluster_time_ablation.py) | `plot_gap_pval_ablation` |  |
 
-### Fig. 30 (p.35) `fig:molformer-regret-paval-ablation`
+### Fig. 30 (p.38) `fig:molformer-regret-paval-ablation`
 
 > Regrets' change for different clustering approach and p-values with Molformer.
 
-tex line 1919
+tex line 2034
 
 | Figure file (`figures/`) | Code | Function | Notes |
 |---|---|---|---|
 | `pval_ablation/molformer_redox-mer_regret_finetune_pval_ablation.pdf` and others, 6 in total (molformer) | [plotting/plot_cluster_time_ablation.py](plotting/plot_cluster_time_ablation.py) | `plot_regret_pval_ablation` |  |
 
-### Fig. 31 (p.36) `fig:molformer_clustering_all`
+### Fig. 31 (p.39) `fig:molformer_clustering_all`
 
 > Prediction time reduction percentage, AUC of GAPs, and Regrets across all the datasets for different clusterin…
 
-tex line 1934
+tex line 2049
 
 | Figure file (`figures/`) | Code | Function | Notes |
 |---|---|---|---|
 | `time/redox-mer_molformer_pval_ablation.pdf` and others, 6 in total (kinase, laser, photoswitch, photovoltaics, redox-mer, solvation) | [plotting/plot_cluster_time_ablation.py](plotting/plot_cluster_time_ablation.py) | `plot_average_prediction_time` | One per dataset |
 
-### Fig. 32 (p.37) `fig:Levey_1D`
+### Fig. 32 (p.40) `fig:Levey_1D`
 
-> Illustration 1000 samples of Levy-1D function with K-means clustering.
+> Illustration of 1,000 samples of Levy-1D function with K-means clustering.
 
-tex line 1949
+tex line 2065
 
 | Figure file (`figures/`) | Code | Function | Notes |
 |---|---|---|---|
 | `toy_data/levy_1d_clusters_landscape.png` | — | — | No generating code found in the repository |
 
-### Fig. 33–34 (p.37) `fig:LLMAT_refine_AFs_iteration1`, `fig:LLMAT_refine_AFs_iteration3`
+### Fig. 33–34 (p.40) `fig:LLMAT_refine_AFs_iteration1`, `fig:LLMAT_refine_AFs_iteration3`
 
 > Refined AFs in LLMAT enable more efficient BO (Iteration 1). / Refined AFs in LLMAT enable more efficient BO (Iteration 3).
 
-tex line 1960
+tex line 2076
 
 | Figure file (`figures/`) | Code | Function | Notes |
 |---|---|---|---|
 | `toy_data/node_details_iter_1.png`<br>`toy_data/node_details_iter_3.png` | [plotting/visualize_toy_bo.py](plotting/visualize_toy_bo.py) | `visualize_node_details` | Run scripts/run_visualization.sh (Levy-1D, seed 5) |
 
-### Fig. 35–36 (p.38) `fig:LLMAT_refine_AFs_iteration5`, `fig:LLMAT_refine_AFs_iteration7`
+### Fig. 35–36 (p.41) `fig:LLMAT_refine_AFs_iteration5`, `fig:LLMAT_refine_AFs_iteration7`
 
 > Refined AFs in LLMAT enable more efficient BO (Iteration 5). / Refined AFs in LLMAT enable more efficient BO (Iteration 7).
 
-tex line 1975
+tex line 2091
 
 | Figure file (`figures/`) | Code | Function | Notes |
 |---|---|---|---|
 | `toy_data/node_details_iter_5.png`<br>`toy_data/node_details_iter_7.png` | [plotting/visualize_toy_bo.py](plotting/visualize_toy_bo.py) | `visualize_node_details` | Run scripts/run_visualization.sh (Levy-1D, seed 5) |
 
-### Fig. 37 (p.38) `fig:Label Noise Ablation`
+### Fig. 37 (p.41) `fig:Label Noise Ablation`
 
 > Illustration of label noise's effects on the average regret of LLMAT.
 
-tex line 2010
+tex line 2126
 
 | Figure file (`figures/`) | Code | Function | Notes |
 |---|---|---|---|
 | `noise/Label_Noise_LLMAT.png` | — | — | No output with this name found; the closest is plotting/plot_noise_ablation_levy.py (outputs levy_10d_noise_ablation_*) |
 
-### Fig. 38 (p.38) `fig: Ablation of gamma.`
+### Fig. 38 (p.41) `fig: Ablation of gamma.`
 
-> Illustration of LLMAT Performance Change w.r.t Different gammas.
+> Illustration of LLMAT performance change w.r.t. different gammas.
 
-tex line 2020
+tex line 2136
 
 | Figure file (`figures/`) | Code | Function | Notes |
 |---|---|---|---|
 | `ablation/redox_mer_gamma_ablation_combined.pdf` | [plotting/plot_gamma_ablation_redox.py](plotting/plot_gamma_ablation_redox.py) | `plot_combined_comparison` | Outputs to results/figs/gamma_ablation/ |
 
-### Fig. 39 (p.39) `fig: llma2.`
+### Fig. 39 (p.42) `fig: llma2.`
 
-> Illustration Performance Comparison of Various Algorithms on Llama2-7b across All Datasets.
+> Performance comparison of various algorithms on Llama-2-7b across all datasets.
 
-tex line 2028
+tex line 2144
 
 | Figure file (`figures/`) | Code | Function | Notes |
 |---|---|---|---|
 | `ablation/llama-2-7b_GAP_algorithms_average.pdf` | [plotting/plot_gap_algorithms_avg.py](plotting/plot_gap_algorithms_avg.py) | `plot_average_gap_per_model` | Change the call in main and set f_models |
 
-### Fig. 40 (p.39) `fig:Multi-Redox Pareto Front`
+### Fig. 40 (p.42) `fig:Multi-Redox Pareto Front`
 
-> Illustration of Pareto fronts and  LLMs and K-means clusters on Multi-Redox Data.
+> Pareto front with LLM (left) and K-means (right) clusters on Multi-Redox data.
 
-tex line 2038
+tex line 2157
 
 | Figure file (`figures/`) | Code | Function | Notes |
 |---|---|---|---|
 | `multiobj/redox-mer_multiobj_t5-base-chem-average_llms_pareto.pdf`<br>`multiobj/redox-mer_multiobj_t5-base-chem-average_kmeans_pareto.pdf` | [benchmarks/MAT/multiobj_material_benchmarks.py](benchmarks/MAT/multiobj_material_benchmarks.py) | `draw_pareto_front` | Outputs to benchmarks/MAT/data/cluster_figs/ |
 
-### Fig. 41 (p.39) `fig:multi-objective extension`
+### Fig. 41 (p.43) `fig:multi-objective extension`
 
 > Multi-objective optimization for LAPEFT vs. LLMAT on the Redox-mer dataset: Upper & Lower Left: Hypervolume, s…
 
-tex line 2046
+tex line 2165
 
 | Figure file (`figures/`) | Code | Function | Notes |
 |---|---|---|---|
 | `multiobj/redox_hv_scalarized_subfigures_comparison.png` | [plotting/plot_redox_comparison.py](plotting/plot_redox_comparison.py) | `plot_hv_and_scalarized_subfigures` |  |
 | `multiobj/redox_objectives_comparison.png` | [plotting/plot_redox_comparison.py](plotting/plot_redox_comparison.py) | `plot_objectives_comparison` |  |
 
-### Fig. 42 (p.40) `fig:api_ablation`
+### Fig. 42 (p.43) `fig:api_ablation`
 
 > GAP (top) and average regret (bottom) of LLMAT on Redox-mer when LLM-based clustering uses different LLM APIs …
 
-tex line 2057
+tex line 2176
 
 | Figure file (`figures/`) | Code | Function | Notes |
 |---|---|---|---|
