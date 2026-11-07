@@ -104,3 +104,11 @@ Large cached files are not tracked by git and must be placed under `benchmarks/M
 
 - Hyperparameters per feature model are defined in `plotting/load_results.py` (result suffixes) and `configs/`.
 - `results/` (about 335 MB, ~76k small `.npy` files) is git-ignored; place it at the repository root to regenerate figures.
+
+## Acknowledgements
+
+Our baseline implementations refer to the following open-source code:
+
+- [wiseodd/lapeft-bayesopt](https://github.com/wiseodd/lapeft-bayesopt) (LAPLACE / LAPEFT baselines and benchmarks, from "A Sober Look at LLMs for Material Discovery")
+- LFBO (likelihood-free Bayesian optimization)
+- [facebookresearch/LaMCTS](https://github.com/facebookresearch/LaMCTS) (LA-MCTS search-space partitioning)
